@@ -1,10 +1,75 @@
 /* --------- Global style */
 
 body {
-    background-color: #445361;
+    background-color: #00A6A6;
     font-family: "Raleway", sans-serif;
     color: white;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* --------- Header & Nav Bar */
+
+.header {
+    background-color: #E6D72A;
+    width: 100%; 
+    position: fixed; 
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    min-height: 3.75rem;
+    top: 0;
+    flex-direction: row-reverse;
+    padding-right: 2rem;
+}
+
+header img {
+    height: 4rem; 
+    margin-top: 2vh;
+    border-radius: 50%;
+}
+
+header a {
+    text-decoration: none;
+    color: #1e3050;
+}
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
+    text-transform: uppercase;
+    display: flex;
+}
+
+#menu>li {
+    font-weight: bold;
+    padding: 0 2rem;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+/* Nav bar */
+
+nav {
+    display: none;
+}
+
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+    color: #E6D72A;
 }
 
 /* --------- Heading */
@@ -241,4 +306,22 @@ body {
         padding: 10px 0;
     }
 
+}
+
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+
+    /* Header */
+    .header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 3.75rem;
+        top: 0;
+        flex-direction: row;
+    }
+
+    nav {
+        display: block;
+    }
 }
