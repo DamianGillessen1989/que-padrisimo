@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +8,21 @@
     <!-- font awesome and google fonts -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    
+
     <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
-    <link rel='shortcut icon' type='image/x-icon' href='assets/images/favicon.ico'/>
+    <link rel='shortcut icon' type='image/x-icon' href='assets/images/favicon.ico' />
 
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Que Padrísimo</title>
 </head>
+
 <body>
 
     <!-- Header & Nav Bar -->
 
     <header class="header">
         <a href="index.html" title="Link to Home Page.">
-            <h1><img src="assets/images/que-padrisimo-logo-original.png"
-                    alt="The Que Padrísimo Logo"></h1>
+            <h1><img src="assets/images/que-padrisimo-logo-original.png" alt="The Que Padrísimo Logo"></h1>
         </a>
         <input type="checkbox" id="nav-toggle" name="nav-toggle">
         <label for="nav-toggle" id="nav-toggle-label">
@@ -32,27 +33,44 @@
                 <li><a href="index.html" title="Link to Home Page.">Home</a></li>
                 <li><a href="game-two.html" title="Link to Game 2 Page.">Game 2</a></li>
                 <li><a href="game-three.html" title="Link to Game 3 Page.">Game 3</a></li>
-                <li><a href="game-four.html" class="active" title="Link to Game 4 Page">Game 4</a></li>
+                <li><a href="vocab.html" class="active" title="Link to Vocabe page with Flashcards">Vocab</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Main Body & Content-->
 
-    <h1 class="heading"></h1>
-        <img class="logo" src="assets/images/que-padrisimo-logo-original.png" alt="Que Padrisimo logo image"> Que Padrísimo
+    <h1 class="heading">
+        <img class="logo" src="assets/images/que-padrisimo-logo-original.png" alt="Que Padrisimo logo image"> Que
+        Padrísimo!
+        <p id="flash-intro">Welcome to Flashcard practice! Test your knowledge and practice your vocabulary with these
+            engaging
+            flashcards. Challenge yourself as you flip through the cards to reveal the answers. Let's get started
+            and expand your knowledge one card at a time!</p>
+    </h1>
 
     <div class="game-area">
-
-    </div>
-
-    <div class="score-area">
-        <p class="scores">Correct Answers <span id="score">0</span></p>
-        <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
+        <div class="flashcard">
+            <div class="card" onclick="flipCard()">
+                <div class="front">
+                    <p id="questionText">Hello</p>
+                </div>
+                <div class="back">
+                    <p id="answerText">Hola</p>
+                </div>
+            </div>
+            <div class="arrows">
+                <button onclick="showPreviousCard()">◄</button>
+                <span id="cardNumber">1/20</span>
+                <button onclick="showNextCard()">►</button>
+                <button onclick="showRandomCard()"><i class="fa-solid fa-shuffle"></i></button>
+            </div>
+        </div>
     </div>
 
     <script src="assets/js/script.js"></script>
     <!-- Font Awesome kit -->
     <script src="https://kit.fontawesome.com/73bf3ff091.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
