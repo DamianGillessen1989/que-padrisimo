@@ -1,7 +1,7 @@
 /* --------- Global style */
 
 body {
-    background-color: #E6D72A;
+    background: linear-gradient(to bottom, #F5F5F5, #FFFFFF);
     font-family: "Raleway", sans-serif;
     color: #1e3050;
     text-align: center;
@@ -9,12 +9,13 @@ body {
     flex-direction: column;
     align-items: center;
     margin-top: 6rem;
+    padding-bottom: 5rem;
 }
 
 /* --------- Header & Nav Bar */
 
 .header {
-    background-color: #F18D9E;
+    background: linear-gradient(to bottom, #FFA500, #FFD700);
     width: 100%;
     position: fixed;
     z-index: 999;
@@ -65,7 +66,7 @@ nav {
     position: absolute;
     width: 100%;
     top: 5.5rem;
-    background-color: #F18D9E;
+    background: linear-gradient(to bottom, #FFA500, #FFD700);
 }
 
 #nav-toggle:checked~nav {
@@ -96,7 +97,7 @@ nav {
 /* --------- Game layout */
 
 .game-area {
-    background-color: #00CCCC;
+    background: linear-gradient(to bottom, #800080 0%, #a040a0 40%, #a040a0 60%, #800080 100%);
     box-sizing: border-box;
     width: 85%;
     height: 65vh;
@@ -105,8 +106,8 @@ nav {
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
-    border: 2px solid #98DBC6;
-    box-shadow: 0 0 10px rgba(152, 219, 198, 1);
+    border: 2px solid #B080C0;
+    box-shadow: 0 0 10px rgba(128, 0, 128, 1);
 }
 
 .question-area {
@@ -125,6 +126,7 @@ nav {
     width: 60%;
     font-size: 1.2rem;
     display: flex;
+    justify-content: space-around;
 }
 
 .controls-area {
@@ -159,6 +161,35 @@ nav {
 .scores {
     display: inline-block;
     padding: 25px;
+}
+
+/* --------- Footer */
+.footer {
+    background: linear-gradient(to bottom, #FFA500, #FFD700);
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#social-networks {
+    list-style-type: none;
+    display: flex;
+}
+
+#social-networks li {
+    margin-right: 10px;
+}
+
+.footer p {
+    margin: 0;
 }
 
 /* --------- Buttons */
@@ -421,7 +452,7 @@ button {
 
     #nav-toggle-label {
         font-size: 2rem;
-        color: #F18D9E;
+        color: transparent;
     }
 
     #menu {
