@@ -8,7 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 6rem;
+    margin-top: 6rem 0;
     padding-bottom: 5rem;
 }
 
@@ -217,6 +217,10 @@ nav {
     display: none;
 }
 
+.quiz-box {
+    display: none;
+}
+
 #quiz-span {
     font-weight: 900;
     text-transform: uppercase;
@@ -326,7 +330,113 @@ nav {
 }
 
 .quiz-box section .que-text {
-    
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.quiz-box section .option-list {
+    display: block;
+    padding: 20px 0;
+}
+
+section .option-list .option {
+    background-color: rgba(240, 248, 255, 0.5);
+    border: 1px solid #1e3050;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 17px;
+    transition: all 0.3s ease;
+}
+
+section .option-list .option:hover {
+    color: #004085;
+    background: #D8E6F7;
+    border-color: #1e3050;
+}
+
+.option-list .option:last-child {
+    margin-bottom: 0px;
+}
+
+.option-list .option .icon-tick {
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 22px;
+    line-height: 24px;
+    display: flex;
+    pointer-events: none;
+    justify-content: space-around;
+    align-items: center;
+    color: #23903c;
+    border-color: #23903c;
+    background: #d4edda;
+}
+
+.option-list .option .icon-cross {
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 22px;
+    line-height: 24px;
+    display: flex;
+    pointer-events: none;
+    justify-content: space-around;
+    align-items: center;
+    color: #a4283a;
+    border-color: #a4283a;
+    background: #f8d7da;
+}
+
+.quiz-box footer {
+    height: 3.75rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    justify-content: space-between;
+}
+
+.quiz-box footer .total-que span {
+    display: flex;
+    user-select: none;
+    align-items: center;
+}
+
+footer .total-que span p {
+    font-weight: 500;
+    padding: 0 5px;
+}
+
+.total-que span p:first-child {
+    padding: 7px;
+}
+
+footer .next-btn {
+    height: 40px;
+    padding: 0 13px;
+    font-size: 18px;
+    font-weight: 400;
+    outline: none;
+    border-radius: 5px;
+    background: #E6ECF0;
+    border: 1px solid #E6ECF0; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3 ease;
+}
+
+footer .next-btn:hover {
+    background: #CAD4DC;
 }
 
 /* --------- Footer */
