@@ -66,7 +66,7 @@ nav {
     position: absolute;
     width: 100%;
     top: 5.5rem;
-    background: linear-gradient(to bottom, #FFA500, #FFD700);
+    background-color: transparent;
 }
 
 #nav-toggle:checked~nav {
@@ -167,10 +167,11 @@ nav {
 .footer {
     background: linear-gradient(to bottom, #FFA500, #FFD700);
     padding: 20px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
     width: 100%;
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .footer-content {
@@ -182,10 +183,12 @@ nav {
 #social-networks {
     list-style-type: none;
     display: flex;
+    font-size: 1.2rem;
 }
 
 #social-networks li {
     margin-right: 10px;
+    padding: 0 1rem;
 }
 
 .footer p {
@@ -315,7 +318,7 @@ nav {
 }
 
 .front {
-    background-color: #f9f9f9;
+    background-color: #F5F5F5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -459,5 +462,11 @@ button {
         display: flex;
         flex-direction: unset;
         align-items: unset;
+    }
+
+    /* Footer */
+    .footer {
+        position: fixed;
+        bottom: -1rem;
     }
 }
