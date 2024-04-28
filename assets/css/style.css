@@ -8,7 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 6rem 0;
+    margin: 6rem;
     padding-bottom: 5rem;
 }
 
@@ -105,59 +105,6 @@ nav {
     padding: 1%;
     border: 2px solid #B080C0;
     box-shadow: 0 0 10px rgba(128, 0, 128, 1);
-}
-
-.question-area {
-    width: 50%;
-    font-size: 2rem;
-    margin: auto;
-    padding: 50px 0;
-}
-
-.question-area span {
-    padding: 0 15px;
-}
-
-.score-area {
-    margin: 5px auto;
-    width: 60%;
-    font-size: 1.2rem;
-    display: flex;
-    justify-content: space-around;
-}
-
-.controls-area {
-    width: 85%;
-    margin: 30px auto;
-}
-
-#score {
-    color: green;
-    font-weight: bold;
-}
-
-#incorrect {
-    color: red;
-    font-weight: bold;
-}
-
-.answer-message {
-    display: none;
-    font-size: 1rem;
-}
-
-#answer-box {
-    border: none;
-    color: #E6ECF0;
-    display: inline-block;
-    height: 40px;
-    width: 80px;
-    font-size: 1.2rem;
-}
-
-.scores {
-    display: inline-block;
-    padding: 25px;
 }
 
 /* --------- Footer */
