@@ -106,7 +106,12 @@ nav {
     max-width: 830px;
     padding: 1%;
     border: 2px solid #B080C0;
-    box-shadow: 0 0 10px rgba(128, 0, 128, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    border-radius: 4px;
 }
 
 /* --------- Footer */
@@ -273,14 +278,6 @@ nav {
 }
 
 /** --------- Flashcard Game */
-
-.game-area {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
 
 .flashcard {
     position: relative;
