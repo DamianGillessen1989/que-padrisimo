@@ -48,6 +48,7 @@ header a {
     flex-direction: column;
     align-items: flex-start;
     font-weight: bolder;
+    padding-bottom: 0.5rem;
 }
 
 #menu>li {
@@ -123,12 +124,14 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-direction: column;
 }
 
 #social-networks {
     list-style-type: none;
     display: flex;
     font-size: 1.2rem;
+    margin-bottom: 1rem;
 }
 
 #social-networks li {
@@ -457,12 +460,13 @@ button {
         display: flex;
         flex-direction: unset;
         align-items: unset;
+        padding-bottom: 0;
     }
 
     /* Footer */
     .footer {
         position: fixed;
-        bottom: -1rem;
+        bottom: 0;
     }
 
     /* Quiz */
@@ -488,5 +492,14 @@ button {
 
     .btn {
         font-size: 17px;
+    }
+
+    .footer-content {
+        flex-direction: unset;
+        justify-content: space-evenly;
+    }
+    
+    #social-networks {
+        margin-bottom: 0;
     }
 }
