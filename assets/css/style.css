@@ -101,10 +101,10 @@ nav {
 .game-area {
     background: linear-gradient(to bottom, #800080 0%, #a040a0 40%, #a040a0 60%, #800080 100%);
     box-sizing: border-box;
-    width: 85%;
+    width: 97%;
     max-height: 450px;
     max-width: 830px;
-    padding: 1%;
+    padding: 0;
     border: 2px solid #B080C0;
     display: flex;
     justify-content: center;
@@ -166,6 +166,11 @@ nav {
     padding: 20px;
     position: relative;
     height: 27.6rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .app>h1 {
@@ -264,6 +269,7 @@ nav {
     cursor: pointer;
     font-size: 17px;
     transition: all .2s linear;
+    border: 1px solid #f0f0f0;
 }
 
 #quit-btn:hover {
@@ -275,6 +281,31 @@ nav {
     display: flex;
     align-items: baseline;
     justify-content: center;
+}
+
+.hidden {
+    display: none;
+}
+
+button#start-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #001f3f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 1rem 2.5rem;
+    border: 1px solid #f0f0f0;
+    opacity: 0.8;
+}
+
+button#start-btn:hover {
+    background-color: #001f3f;
+}
+
+button#start-btn:focus {
+    outline: none;
 }
 
 /** --------- Flashcard Game */
@@ -461,6 +492,10 @@ button {
         padding-bottom: 0;
     }
 
+    .game-area {
+        width: 85%;
+    }
+
     /* Footer */
     .footer {
         position: fixed;
@@ -473,7 +508,7 @@ button {
     }
 
     #answer-buttons {
-        margin-top: 1rem;
+        margin-top: 0;
     }
 
     .btn {
@@ -486,6 +521,7 @@ button {
 
     .quiz>h2 {
         font-size: 18px;
+        margin-top: -1rem;
     }
 
     .btn {
@@ -496,7 +532,7 @@ button {
         flex-direction: unset;
         justify-content: space-evenly;
     }
-    
+
     #social-networks {
         margin-bottom: 0;
     }

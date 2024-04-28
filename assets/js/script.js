@@ -191,12 +191,26 @@ const quitBtnEL = document.getElementById("quit-btn");
 let currentQuestionIndex = 0;
 let score = 0;
 
+const startBtnEL = document.getElementById("start-btn");
+const quizContainerEL = document.querySelector(".quiz");
+
+startBtnEL.addEventListener("click", () => {
+    startQuiz();
+    quizContainerEL.classList.remove("hidden");
+    startBtnEL.style.display = "none";
+});
+
 function startQuiz() {
     currentQuestionIndex = 0;
     score = 0;
     nextBtnEL.innerHTML = "Next";
     showQuestion();
 }
+quitBtnEL.addEventListener("click", () => {
+    quizContainerEL.classList.add("hidden");
+    startBtnEL.style.display = "block";
+});
+
 function showQuestion() {
     resetState();
     let currentQuestion = questions[currentQuestionIndex];
