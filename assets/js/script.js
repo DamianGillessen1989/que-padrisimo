@@ -1,4 +1,5 @@
 // JS for index.html Quiz game
+
 const questions = [
     {
         question: "Necesito el ____ para cocinar la cena. (Choose the correct word below)",
