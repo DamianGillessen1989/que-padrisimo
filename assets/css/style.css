@@ -67,7 +67,7 @@ nav {
     position: absolute;
     width: 100%;
     top: 5.5rem;
-    background: linear-gradient(to bottom, #FFA500, #FFD700);
+    background: linear-gradient(to bottom, #FFD700, #FFA500);
 }
 
 #nav-toggle:checked~nav {
