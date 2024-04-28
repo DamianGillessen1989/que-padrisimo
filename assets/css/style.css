@@ -67,7 +67,7 @@ nav {
     position: absolute;
     width: 100%;
     top: 5.5rem;
-    background-color: transparent;
+    background: linear-gradient(to bottom, #FFA500, #FFD700);
 }
 
 #nav-toggle:checked~nav {
@@ -449,6 +449,7 @@ button {
         display: block;
         position: unset;
         width: unset;
+        background-color: transparent;
     }
 
     #nav-toggle-label {
