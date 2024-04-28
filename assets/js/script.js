@@ -2,7 +2,7 @@
 
 const questions = [
     {
-        question: "Necesito el ____ para cocinar la cena. (Choose the correct word below)",
+        question: "Necesito la ____ para cocinar la cena. (Choose the correct word below)",
         answers: [
             { text: "sombrero", correct: false },
             { text: "mochilla", correct: false },
@@ -24,7 +24,7 @@ const questions = [
         answers: [
             { text: "lento", correct: false },
             { text: "triste", correct: false },
-            { text: "feliz", correct: false },
+            { text: "frio", correct: false },
             { text: "libre", correct: true }
         ]
     },
@@ -32,9 +32,9 @@ const questions = [
         question: "Voy a comprar ____ para hacer una torta. (Choose the correct word below)",
         answers: [
             { text: "harina", correct: true },
-            { text: "azúcar", correct: false },
-            { text: "huevos", correct: false },
-            { text: "leche", correct: false }
+            { text: "canela", correct: false },
+            { text: "cafe", correct: false },
+            { text: "miel", correct: false }
         ]
     },
     {
@@ -59,9 +59,9 @@ const questions = [
         question: "Quiero comprar una camisa ____ para la fiesta. (Choose the correct word below)",
         answers: [
             { text: "formal", correct: true },
-            { text: "cómoda", correct: false },
-            { text: "colorida", correct: false },
-            { text: "deportiva", correct: false }
+            { text: "sucio", correct: false },
+            { text: "humedo", correct: false },
+            { text: "arrugado", correct: false }
         ]
     },
     {
@@ -74,7 +74,7 @@ const questions = [
         ]
     },
     {
-        question: "Hoy vamos a la ____ para ver una película. (Choose the correct word below)",
+        question: "Hoy vamos a el ____ para ver una película. (Choose the correct word below)",
         answers: [
             { text: "cine", correct: true },
             { text: "teatro", correct: false },
@@ -86,13 +86,13 @@ const questions = [
         question: "Me encanta el ____ de las flores en primavera. (Choose the correct word below)",
         answers: [
             { text: "olor", correct: true },
-            { text: "color", correct: false },
+            { text: "estilo", correct: false },
             { text: "tamaño", correct: false },
             { text: "forma", correct: false }
         ]
     },
     {
-        question: "Voy a comprar ____ para pintar mi casa. (Choose the correct word below)",
+        question: "Voy a comprar un ____ para pintar mi casa. (Choose the correct word below)",
         answers: [
             { text: "papel", correct: false },
             { text: "pincel", correct: true },
@@ -119,7 +119,7 @@ const questions = [
         ]
     },
     {
-        question: "El ____ está en la mesa junto a las llaves. (Choose the correct word below)",
+        question: "El ____ está en la billetera sobre la mesa. (Choose the correct word below)",
         answers: [
             { text: "periódico", correct: false },
             { text: "teléfono", correct: false },

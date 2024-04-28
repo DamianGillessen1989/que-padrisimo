@@ -8,7 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 6rem;
+    margin: 6rem 0;
     padding-bottom: 5rem;
 }
 
@@ -170,7 +170,7 @@ nav {
 }
 
 .quiz {
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .quiz>h2 {
@@ -180,7 +180,7 @@ nav {
 }
 
 #answer-buttons {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     display: flex;
     flex-direction: column;
 }
@@ -192,7 +192,7 @@ nav {
     width: 100%;
     border: 1px solid #00291c;
     padding: 10px;
-    margin: 10px 0;
+    margin: 6px 0;
     text-align: left;
     border-radius: 4px;
     cursor: pointer;
@@ -261,6 +261,11 @@ nav {
 #quit-btn:hover {
     transform: translateY(-2px);
     opacity: .9;
+}
+
+.quiz-buttons {
+    display: flex;
+    align-items: baseline;
 }
 
 /** --------- Flashcard Game */
@@ -457,5 +462,18 @@ button {
     .footer {
         position: fixed;
         bottom: -1rem;
+    }
+
+    /* Quiz */
+    .quiz {
+        padding: 20px 0;
+    }
+
+    #answer-buttons {
+        margin-top: 1rem;
+    }
+
+    .btn {
+        margin: 10px 0;
     }
 }
