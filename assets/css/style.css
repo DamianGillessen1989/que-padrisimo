@@ -449,7 +449,7 @@ button {
         display: block;
         position: unset;
         width: unset;
-        background-color: transparent;
+        background: none;
     }
 
     #nav-toggle-label {
