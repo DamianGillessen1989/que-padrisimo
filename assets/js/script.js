@@ -1,186 +1,187 @@
 // JS for index.html Quiz game
 const questions = [
     {
-        question: "What is the Spanish word for 'tree'?",
+        question: "Necesito el ____ para cocinar la cena. (Choose the correct word below)",
         answers: [
-            { text: "árbol", correct: true },
-            { text: "planta", correct: false },
-            { text: "hierba", correct: false },
-            { text: "flor", correct: false }
+            { text: "sombrero", correct: false },
+            { text: "mochilla", correct: false },
+            { text: "olla", correct: true },
+            { text: "llave", correct: false }
         ]
     },
     {
-        question: "How do you say 'hello' in Spanish?",
-        answers: [
-            { text: "hola", correct: true },
-            { text: "adiós", correct: false },
-            { text: "gracias", correct: false },
-            { text: "por favor", correct: false }
-        ]
-    },
-    {
-        question: "What is the Spanish word for 'water'?",
-        answers: [
-            { text: "fuego", correct: false },
-            { text: "aire", correct: false },
-            { text: "tierra", correct: false },
-            { text: "agua", correct: true }
-        ]
-    },
-    {
-        question: "What does 'gracias' mean in English?",
-        answers: [
-            { text: "please", correct: false },
-            { text: "thank you", correct: true },
-            { text: "sorry", correct: false },
-            { text: "hello", correct: false }
-        ]
-    },
-    {
-        question: "How do you say 'goodbye' in Spanish?",
-        answers: [
-            { text: "hola", correct: false },
-            { text: "adiós", correct: true },
-            { text: "gracias", correct: false },
-            { text: "por favor", correct: false }
-        ]
-    },
-    {
-        question: "What is the Spanish word for 'book'?",
-        answers: [
-            { text: "periódico", correct: false },
-            { text: "revista", correct: false },
-            { text: "libro", correct: true },
-            { text: "cuaderno", correct: false }
-        ]
-    },
-    {
-        question: "What is the Spanish word for 'sun'?",
-        answers: [
-            { text: "luna", correct: false },
-            { text: "estrella", correct: false },
-            { text: "sol", correct: true },
-            { text: "nube", correct: false }
-        ]
-    },
-    {
-        question: "What does 'hambre' mean in English?",
-        answers: [
-            { text: "thirsty", correct: false },
-            { text: "hungry", correct: true },
-            { text: "tired", correct: false },
-            { text: "happy", correct: false }
-        ]
-    },
-    {
-        question: "How do you say 'cat' in Spanish?",
-        answers: [
-            { text: "perro", correct: false },
-            { text: "gato", correct: true },
-            { text: "caballo", correct: false },
-            { text: "pájaro", correct: false }
-        ]
-    },
-    {
-        question: "What is the Spanish word for 'house'?",
-        answers: [
-            { text: "edificio", correct: false },
-            { text: "apartamento", correct: false },
-            { text: "casa", correct: true },
-            { text: "mansión", correct: false }
-        ]
-    },
-    {
-        question: "How do you say 'red' in Spanish?",
+        question: "La profesora nos explicó la lección ____. (Choose the correct word below)",
         answers: [
             { text: "azul", correct: false },
-            { text: "verde", correct: false },
-            { text: "rojo", correct: true },
-            { text: "amarillo", correct: false }
+            { text: "importante", correct: true },
+            { text: "dulce", correct: false },
+            { text: "padre", correct: false }
         ]
     },
     {
-        question: "What does 'comida' mean in English?",
+        question: "El perro corre ____ en el parque. (Choose the correct word below)",
         answers: [
-            { text: "food", correct: true },
-            { text: "drink", correct: false },
-            { text: "dessert", correct: false },
-            { text: "fruit", correct: false }
+            { text: "lento", correct: false },
+            { text: "triste", correct: false },
+            { text: "feliz", correct: false },
+            { text: "libre", correct: true }
         ]
     },
     {
-        question: "What is the Spanish word for 'mountain'?",
+        question: "Voy a comprar ____ para hacer una torta. (Choose the correct word below)",
         answers: [
-            { text: "playa", correct: false },
-            { text: "valle", correct: false },
-            { text: "montaña", correct: true },
-            { text: "colina", correct: false }
+            { text: "harina", correct: true },
+            { text: "azúcar", correct: false },
+            { text: "huevos", correct: false },
+            { text: "leche", correct: false }
         ]
     },
     {
-        question: "How do you say 'chair' in Spanish?",
+        question: "¿Puedes abrir la ____ por favor? (Choose the correct word below)",
         answers: [
-            { text: "mesa", correct: false },
-            { text: "silla", correct: true },
-            { text: "sofá", correct: false },
-            { text: "cama", correct: false }
+            { text: "puerta", correct: true },
+            { text: "muro", correct: false },
+            { text: "burro", correct: false },
+            { text: "almohada", correct: false }
         ]
     },
     {
-        question: "What is the Spanish word for 'father'?",
+        question: "Mi hermana necesita un ____ para leer. (Choose the correct word below)",
         answers: [
-            { text: "abuelo", correct: false },
-            { text: "hermano", correct: false },
-            { text: "padre", correct: true },
-            { text: "tío", correct: false }
+            { text: "libro", correct: true },
+            { text: "lápiz", correct: false },
+            { text: "cuaderno", correct: false },
+            { text: "computadora", correct: false }
         ]
     },
     {
-        question: "What does 'escuela' mean in English?",
+        question: "Quiero comprar una camisa ____ para la fiesta. (Choose the correct word below)",
         answers: [
-            { text: "school", correct: true },
-            { text: "park", correct: false },
-            { text: "library", correct: false },
-            { text: "museum", correct: false }
+            { text: "formal", correct: true },
+            { text: "cómoda", correct: false },
+            { text: "colorida", correct: false },
+            { text: "deportiva", correct: false }
         ]
     },
     {
-        question: "How do you say 'summer' in Spanish?",
+        question: "Mi abuela hace el mejor ____ del mundo. (Choose the correct word below)",
         answers: [
-            { text: "invierno", correct: false },
-            { text: "primavera", correct: false },
-            { text: "verano", correct: true },
-            { text: "otoño", correct: false }
+            { text: "refresco", correct: false },
+            { text: "pastel", correct: true },
+            { text: "mescal", correct: false },
+            { text: "michelada", correct: false }
         ]
     },
     {
-        question: "What is the Spanish word for 'doctor'?",
+        question: "Hoy vamos a la ____ para ver una película. (Choose the correct word below)",
         answers: [
-            { text: "ingeniero", correct: false },
-            { text: "arquitecto", correct: false },
-            { text: "médico", correct: true },
-            { text: "abogado", correct: false }
+            { text: "cine", correct: true },
+            { text: "teatro", correct: false },
+            { text: "biblioteca", correct: false },
+            { text: "parque", correct: false }
         ]
     },
     {
-        question: "What does 'casa' mean in English?",
+        question: "Me encanta el ____ de las flores en primavera. (Choose the correct word below)",
         answers: [
-            { text: "house", correct: true },
-            { text: "apartment", correct: false },
-            { text: "mansion", correct: false },
-            { text: "condo", correct: false }
+            { text: "olor", correct: true },
+            { text: "color", correct: false },
+            { text: "tamaño", correct: false },
+            { text: "forma", correct: false }
         ]
     },
     {
-        question: "How do you say 'bathroom' in Spanish?",
+        question: "Voy a comprar ____ para pintar mi casa. (Choose the correct word below)",
         answers: [
-            { text: "dormitorio", correct: false },
-            { text: "cocina", correct: false },
-            { text: "baño", correct: true },
-            { text: "sala", correct: false }
+            { text: "papel", correct: false },
+            { text: "pincel", correct: true },
+            { text: "piedra", correct: false },
+            { text: "piso", correct: false }
+        ]
+    },
+    {
+        question: "Mi hermano es muy ____ y siempre ayuda a los demás. (Choose the correct word below)",
+        answers: [
+            { text: "gracioso", correct: false },
+            { text: "amable", correct: true },
+            { text: "inteligente", correct: false },
+            { text: "trabajador", correct: false }
+        ]
+    },
+    {
+        question: "Quiero comprar un regalo ____ para mi mamá. (Choose the correct word below)",
+        answers: [
+            { text: "especial", correct: true },
+            { text: "barato", correct: false },
+            { text: "maloliente", correct: false },
+            { text: "antigua", correct: false }
+        ]
+    },
+    {
+        question: "El ____ está en la mesa junto a las llaves. (Choose the correct word below)",
+        answers: [
+            { text: "periódico", correct: false },
+            { text: "teléfono", correct: false },
+            { text: "dinero", correct: true },
+            { text: "libro", correct: false }
+        ]
+    },
+    {
+        question: "Mi abuela cocina la mejor ____ de pollo del mundo. (Choose the correct word below)",
+        answers: [
+            { text: "ensalada", correct: false },
+            { text: "sopa", correct: true },
+            { text: "carne", correct: false },
+            { text: "congelado", correct: false }
+        ]
+    },
+    {
+        question: "Mi hermana mayor va a ____ el colegio este año. (Choose the correct word below)",
+        answers: [
+            { text: "empezar", correct: true },
+            { text: "terminar", correct: false },
+            { text: "estudiar", correct: false },
+            { text: "visitar", correct: false }
+        ]
+    },
+    {
+        question: "Vamos a ____ en el parque este fin de semana. (Choose the correct word below)",
+        answers: [
+            { text: "jugar", correct: false },
+            { text: "picnic", correct: true },
+            { text: "correr", correct: false },
+            { text: "nadar", correct: false }
+        ]
+    },
+    {
+        question: "¿Dónde está el ____ de mi bicicleta? (Choose the correct word below)",
+        answers: [
+            { text: "llave", correct: false },
+            { text: "rueda", correct: true },
+            { text: "manillar", correct: false },
+            { text: "asiento", correct: false }
+        ]
+    },
+    {
+        question: "Mi hermano tiene un ____ nuevo para hacer llamadas. (Choose the correct word below)",
+        answers: [
+            { text: "jugador", correct: false },
+            { text: "teléfono", correct: true },
+            { text: "computadora", correct: false },
+            { text: "libro", correct: false }
+        ]
+    },
+    {
+        question: "Voy a la tienda a comprar ____ para hacer una ensalada. (Choose the correct word below)",
+        answers: [
+            { text: "lechuga", correct: true },
+            { text: "carne", correct: false },
+            { text: "pan", correct: false },
+            { text: "helado", correct: false }
         ]
     }
 ];
+
 const questionEL = document.getElementById("question");
 const answerButtonsEL = document.getElementById("answer-buttons");
 const nextBtnEL = document.getElementById("next-btn");
