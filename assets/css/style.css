@@ -243,6 +243,26 @@ nav {
     border-color: #e36060;
 }
 
+#quit-btn {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e36060;
+    color: #fff;
+    font-weight: 100;
+    width: 140px;
+    padding: 12px;
+    margin-top: 10px;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: all .2s linear;
+}
+
+#quit-btn:hover {
+    transform: translateY(-2px);
+    opacity: .9;
+}
+
 /** --------- Flashcard Game */
 
 .game-area {

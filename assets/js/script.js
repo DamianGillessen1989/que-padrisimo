@@ -184,6 +184,7 @@ const questions = [
 const questionEL = document.getElementById("question");
 const answerButtonsEL = document.getElementById("answer-buttons");
 const nextBtnEL = document.getElementById("next-btn");
+const quitBtnEL = document.getElementById("quit-btn");
 
 let currentQuestionIndex = 0;
 let score = 0;
@@ -260,6 +261,10 @@ nextBtnEL.addEventListener("click", () => {
     } else {
         startQuiz();
     }
+});
+
+quitBtnEL.addEventListener("click", () => { 
+    startQuiz(); 
 });
 
 startQuiz();
