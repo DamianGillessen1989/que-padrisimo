@@ -1,3 +1,269 @@
+// JS for index.html Quiz game
+const questions = [
+    {
+        question: "What is the Spanish word for 'tree'?",
+        answers: [
+            { text: "árbol", correct: true },
+            { text: "planta", correct: false },
+            { text: "hierba", correct: false },
+            { text: "flor", correct: false }
+        ]
+    },
+    {
+        question: "How do you say 'hello' in Spanish?",
+        answers: [
+            { text: "hola", correct: true },
+            { text: "adiós", correct: false },
+            { text: "gracias", correct: false },
+            { text: "por favor", correct: false }
+        ]
+    },
+    {
+        question: "What is the Spanish word for 'water'?",
+        answers: [
+            { text: "fuego", correct: false },
+            { text: "aire", correct: false },
+            { text: "tierra", correct: false },
+            { text: "agua", correct: true }
+        ]
+    },
+    {
+        question: "What does 'gracias' mean in English?",
+        answers: [
+            { text: "please", correct: false },
+            { text: "thank you", correct: true },
+            { text: "sorry", correct: false },
+            { text: "hello", correct: false }
+        ]
+    },
+    {
+        question: "How do you say 'goodbye' in Spanish?",
+        answers: [
+            { text: "hola", correct: false },
+            { text: "adiós", correct: true },
+            { text: "gracias", correct: false },
+            { text: "por favor", correct: false }
+        ]
+    },
+    {
+        question: "What is the Spanish word for 'book'?",
+        answers: [
+            { text: "periódico", correct: false },
+            { text: "revista", correct: false },
+            { text: "libro", correct: true },
+            { text: "cuaderno", correct: false }
+        ]
+    },
+    {
+        question: "What is the Spanish word for 'sun'?",
+        answers: [
+            { text: "luna", correct: false },
+            { text: "estrella", correct: false },
+            { text: "sol", correct: true },
+            { text: "nube", correct: false }
+        ]
+    },
+    {
+        question: "What does 'hambre' mean in English?",
+        answers: [
+            { text: "thirsty", correct: false },
+            { text: "hungry", correct: true },
+            { text: "tired", correct: false },
+            { text: "happy", correct: false }
+        ]
+    },
+    {
+        question: "How do you say 'cat' in Spanish?",
+        answers: [
+            { text: "perro", correct: false },
+            { text: "gato", correct: true },
+            { text: "caballo", correct: false },
+            { text: "pájaro", correct: false }
+        ]
+    },
+    {
+        question: "What is the Spanish word for 'house'?",
+        answers: [
+            { text: "edificio", correct: false },
+            { text: "apartamento", correct: false },
+            { text: "casa", correct: true },
+            { text: "mansión", correct: false }
+        ]
+    },
+    {
+        question: "How do you say 'red' in Spanish?",
+        answers: [
+            { text: "azul", correct: false },
+            { text: "verde", correct: false },
+            { text: "rojo", correct: true },
+            { text: "amarillo", correct: false }
+        ]
+    },
+    {
+        question: "What does 'comida' mean in English?",
+        answers: [
+            { text: "food", correct: true },
+            { text: "drink", correct: false },
+            { text: "dessert", correct: false },
+            { text: "fruit", correct: false }
+        ]
+    },
+    {
+        question: "What is the Spanish word for 'mountain'?",
+        answers: [
+            { text: "playa", correct: false },
+            { text: "valle", correct: false },
+            { text: "montaña", correct: true },
+            { text: "colina", correct: false }
+        ]
+    },
+    {
+        question: "How do you say 'chair' in Spanish?",
+        answers: [
+            { text: "mesa", correct: false },
+            { text: "silla", correct: true },
+            { text: "sofá", correct: false },
+            { text: "cama", correct: false }
+        ]
+    },
+    {
+        question: "What is the Spanish word for 'father'?",
+        answers: [
+            { text: "abuelo", correct: false },
+            { text: "hermano", correct: false },
+            { text: "padre", correct: true },
+            { text: "tío", correct: false }
+        ]
+    },
+    {
+        question: "What does 'escuela' mean in English?",
+        answers: [
+            { text: "school", correct: true },
+            { text: "park", correct: false },
+            { text: "library", correct: false },
+            { text: "museum", correct: false }
+        ]
+    },
+    {
+        question: "How do you say 'summer' in Spanish?",
+        answers: [
+            { text: "invierno", correct: false },
+            { text: "primavera", correct: false },
+            { text: "verano", correct: true },
+            { text: "otoño", correct: false }
+        ]
+    },
+    {
+        question: "What is the Spanish word for 'doctor'?",
+        answers: [
+            { text: "ingeniero", correct: false },
+            { text: "arquitecto", correct: false },
+            { text: "médico", correct: true },
+            { text: "abogado", correct: false }
+        ]
+    },
+    {
+        question: "What does 'casa' mean in English?",
+        answers: [
+            { text: "house", correct: true },
+            { text: "apartment", correct: false },
+            { text: "mansion", correct: false },
+            { text: "condo", correct: false }
+        ]
+    },
+    {
+        question: "How do you say 'bathroom' in Spanish?",
+        answers: [
+            { text: "dormitorio", correct: false },
+            { text: "cocina", correct: false },
+            { text: "baño", correct: true },
+            { text: "sala", correct: false }
+        ]
+    }
+];
+const questionEL = document.getElementById("question");
+const answerButtonsEL = document.getElementById("answer-buttons");
+const nextBtnEL = document.getElementById("next-btn");
+
+let currentQuestionIndex = 0;
+let score = 0;
+
+function startQuiz() {
+    currentQuestionIndex = 0;
+    score = 0;
+    nextBtnEL.innerHTML = "Next";
+    showQuestion();
+}
+function showQuestion() {
+    resetState();
+    let currentQuestion = questions[currentQuestionIndex];
+    let questionNo = currentQuestionIndex + 1;
+    questionEL.innerHTML = `Question ${questionNo} of ${questions.length}: ${currentQuestion.question}`;
+
+    currentQuestion.answers.forEach(answer => {
+        const button = document.createElement("button");
+        button.innerHTML = answer.text;
+        button.classList.add("btn");
+        answerButtonsEL.appendChild(button);
+
+        if (answer.correct) {
+            button.dataset.correct = answer.correct;
+        }
+        button.addEventListener("click", selectAnswer);
+    });
+}
+
+function resetState() {
+    nextBtnEL.style.visibility = "hidden";
+    while (answerButtonsEL.firstChild) {
+        answerButtonsEL.removeChild(answerButtonsEL.firstChild);
+    }
+}
+
+function selectAnswer(e) {
+    const selectedBtn = e.target;
+    const isCorrect = selectedBtn.dataset.correct === "true";
+    if (isCorrect) {
+        selectedBtn.classList.add("correct");
+        score++;
+    } else {
+        selectedBtn.classList.add("incorrect");
+    }
+    Array.from(answerButtonsEL.children).forEach(button => {
+        if (button.dataset.correct === "true") {
+            button.classList.add("correct");
+        }
+        button.disabled = true;
+    });
+    nextBtnEL.style.visibility = "visible";
+}
+
+function showScore() {
+    resetState();
+    questionEL.innerHTML = `You scored ${score} out of ${questions.length}!`;
+    nextBtnEL.innerHTML = "Play Again";
+    nextBtnEL.style.visibility = "visible";
+}
+
+function handleNextButton() {
+    currentQuestionIndex++;
+    if (currentQuestionIndex < questions.length) {
+        showQuestion();
+    } else {
+        showScore();
+    }
+}
+
+nextBtnEL.addEventListener("click", () => {
+    if (currentQuestionIndex < questions.length) {
+        handleNextButton();
+    } else {
+        startQuiz();
+    }
+});
+
+startQuiz();
+
 // JS for vocab.html Flashcard game
 
 // Variables
