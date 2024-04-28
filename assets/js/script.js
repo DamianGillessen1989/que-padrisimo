@@ -6,7 +6,7 @@ let totalCards = 50;
 
 // Flashcards Array
 let flashcards = [
-    { question: 'Hello', answer: 'Hola (OH-lah)' },
+{ question: 'Hello', answer: 'Hola (OH-lah)' },
 { question: 'Goodbye', answer: 'Adiós (ah-DYOHSS)' },
 { question: 'Yes', answer: 'Sí (see)' },
 { question: 'No', answer: 'No (noh)' },
