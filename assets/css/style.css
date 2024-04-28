@@ -161,7 +161,7 @@ nav {
 }
 
 .app>h1 {
-    font-size: 25px;
+    font-size: 23px;
     color: #222;
     font-weight: bold;
     border-bottom: 1px solid #cdcdcd;
@@ -174,7 +174,7 @@ nav {
 }
 
 .quiz>h2 {
-    font-size: 18px;
+    font-size: 16px;
     color: #00291c;
     font-weight: 100;
 }
@@ -197,7 +197,7 @@ nav {
     border-radius: 4px;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
-    font-size: 17px;
+    font-size: 14px;
     transition: all .25s linear;
 }
 
@@ -266,6 +266,7 @@ nav {
 .quiz-buttons {
     display: flex;
     align-items: baseline;
+    justify-content: center;
 }
 
 /** --------- Flashcard Game */
@@ -475,5 +476,17 @@ button {
 
     .btn {
         margin: 10px 0;
+    }
+
+    .app>h1 {
+        font-size: 25px;
+    }
+
+    .quiz>h2 {
+        font-size: 18px;
+    }
+
+    .btn {
+        font-size: 17px;
     }
 }
