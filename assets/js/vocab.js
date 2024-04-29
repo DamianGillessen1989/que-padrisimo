@@ -1,10 +1,8 @@
 // JS for vocab.html Flashcard game
 
-// Variables
-const currentCard = 1;
-const totalCards = 50;
+let currentCard = 1;
+let totalCards = 50;
 
-// Flashcards Array
 const flashcards = [
     { question: 'Hello', answer: 'Hola (OH-lah)' },
     { question: 'Goodbye', answer: 'Adiós (ah-DYOHSS)' },
@@ -58,9 +56,10 @@ const flashcards = [
     { question: 'Sky', answer: 'Cielo (syeh-loh)' }
 ];
 
-// The flipCard function
+const card = document.querySelector('.card');
+
 function flipCard() {
-    document.querySelector('.card').classList.toggle('flipped');
+    card.classList.toggle('flipped');
 }
 
 /*
@@ -72,7 +71,7 @@ function showNextCard() {
     if (currentCard < totalCards) {
         currentCard++;
         updateFlashcard();
-        document.querySelector('.card').classList.remove('flipped');
+        card.classList.remove('flipped');
     }
 }
 
@@ -85,7 +84,7 @@ function showPreviousCard() {
     if (currentCard > 1) {
         currentCard--;
         updateFlashcard();
-        document.querySelector('.card').classList.remove('flipped');
+        card.classList.remove('flipped');
     }
 }
 
@@ -114,7 +113,7 @@ function showRandomCard() {
     let randomCard = Math.floor(Math.random() * totalCards) + 1;
     currentCard = randomCard;
     updateFlashcard();
-    document.querySelector('.card').classList.remove('flipped');
+    card.classList.remove('flipped');
 }
 
 updateFlashcard();

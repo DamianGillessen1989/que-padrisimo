@@ -1,6 +1,5 @@
 // JS for index.html Quiz game
 
-// Array of objects containing questions and answers
 const questions = [
     {
         question: "Necesito la ____ para cocinar la cena. (Choose the correct word below)",
@@ -184,22 +183,18 @@ const questions = [
     }
 ];
 
-// DOM elements
-const questionEl = document.getElementById("question");
-const answerButtonsEl = document.getElementById("answer-buttons");
-const nextBtnEl = document.getElementById("next-btn");
-const quitBtnEl = document.getElementById("quit-btn");
-const startBtnEl = document.getElementById("start-btn");
-const quizContainerEl = document.querySelector(".quiz");
+const questionEL = document.getElementById("question");
+const answerButtonsEL = document.getElementById("answer-buttons");
+const nextBtnEL = document.getElementById("next-btn");
+const quitBtnEL = document.getElementById("quit-btn");
+const startBtnEL = document.getElementById("start-btn");
+const quizContainerEL = document.querySelector(".quiz");
 
-// Variables to keep track of current question index and score
-const currentQuestionIndex = 0;
-const score = 0;
+let currentQuestionIndex = 0;
+let score = 0;
 
-// Event listener for the start button
 startBtnEL.addEventListener("click", () => {
     startQuiz();
-    // Show the quiz container and hide the start button
     quizContainerEL.classList.remove("hidden");
     startBtnEL.style.display = "none";
 });
@@ -208,17 +203,12 @@ startBtnEL.addEventListener("click", () => {
 and the score to zero, which then sets up the 'Next' button and shows the first question.
  */
 function startQuiz() {
-    // Reset current question index and score
     currentQuestionIndex = 0;
     score = 0;
-    // Set the next button text
     nextBtnEL.innerHTML = "Next";
-    // Display the first question
     showQuestion();
 }
-// Event listener for the quit button
 quitBtnEL.addEventListener("click", () => {
-    // Hide the quiz container and show the start button
     quizContainerEL.classList.add("hidden");
     startBtnEL.style.display = "block";
 });
@@ -227,27 +217,20 @@ quitBtnEL.addEventListener("click", () => {
 its possible options. It resets the state of the answer buttons and assigns them event listeners.
 */
 function showQuestion() {
-    // Reset the answer buttons
     resetState();
-    // Get the current question object
     let currentQuestion = questions[currentQuestionIndex];
-    // Calculate the question number
     let questionNo = currentQuestionIndex + 1;
-    // Display the question
     questionEL.innerHTML = `Question ${questionNo} of ${questions.length}: ${currentQuestion.question}`;
 
-    // Loop through answers and create buttons
     currentQuestion.answers.forEach(answer => {
-        const button = document.createElement("button");
+        let button = document.createElement("button");
         button.innerHTML = answer.text;
         button.classList.add("btn");
         answerButtonsEL.appendChild(button);
 
-        // Set data attribute for correct answer
         if (answer.correct) {
             button.dataset.correct = answer.correct;
         }
-        // Add event listener for answer selection
         button.addEventListener("click", selectAnswer);
     });
 }
@@ -256,9 +239,7 @@ function showQuestion() {
 the 'Next' button and removing all child elements from the answer buttons element.
 */
 function resetState() {
-    // Hide the next button
     nextBtnEL.style.visibility = "hidden";
-    // Remove all answer buttons
     while (answerButtonsEL.firstChild) {
         answerButtonsEL.removeChild(answerButtonsEL.firstChild);
     }
@@ -271,21 +252,18 @@ the 'Next' button.
 function selectAnswer(e) {
     let selectedBtn = e.target;
     let isCorrect = selectedBtn.dataset.correct === "true";
-    // Add classes based on correctness
     if (isCorrect) {
         selectedBtn.classList.add("correct");
         score++;
     } else {
         selectedBtn.classList.add("incorrect");
     }
-    // Disable all answer buttons
     Array.from(answerButtonsEL.children).forEach(button => {
         if (button.dataset.correct === "true") {
             button.classList.add("correct");
         }
         button.disabled = true;
     });
-    // Show the next button
     nextBtnEL.style.visibility = "visible";
 }
 
@@ -293,13 +271,9 @@ function selectAnswer(e) {
 the quiz is completed and enables the user to play again.
 */
 function showScore() {
-    // Reset the answer buttons
     resetState();
-    // Display the score
     questionEL.innerHTML = `You scored ${score} out of ${questions.length}!`;
-    // Change next button text
     nextBtnEL.innerHTML = "Play Again";
-    // Show the next button
     nextBtnEL.style.visibility = "visible";
 }
 
@@ -308,7 +282,6 @@ button is clicked. It checks if there are more questions to display and either s
 next question or the final score.
 */
 function handleNextButton() {
-    // Move to the next question or show the final score
     currentQuestionIndex++;
     if (currentQuestionIndex < questions.length) {
         showQuestion();
@@ -332,5 +305,4 @@ quitBtnEL.addEventListener("click", () => {
     startQuiz();
 });
 
-// Start the quiz when the page loads
 startQuiz();
