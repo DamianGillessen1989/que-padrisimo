@@ -1,7 +1,7 @@
 // JS for index.html Quiz game
 
 // Array of objects containing questions and answers
-let questions = [
+const questions = [
     {
         question: "Necesito la ____ para cocinar la cena. (Choose the correct word below)",
         answers: [
@@ -185,17 +185,16 @@ let questions = [
 ];
 
 // DOM elements
-let questionEL = document.getElementById("question");
-let answerButtonsEL = document.getElementById("answer-buttons");
-let nextBtnEL = document.getElementById("next-btn");
-let quitBtnEL = document.getElementById("quit-btn");
+const questionEl = document.getElementById("question");
+const answerButtonsEl = document.getElementById("answer-buttons");
+const nextBtnEl = document.getElementById("next-btn");
+const quitBtnEl = document.getElementById("quit-btn");
+const startBtnEl = document.getElementById("start-btn");
+const quizContainerEl = document.querySelector(".quiz");
 
 // Variables to keep track of current question index and score
-let currentQuestionIndex = 0;
-let score = 0;
-
-let startBtnEL = document.getElementById("start-btn");
-let quizContainerEL = document.querySelector(".quiz");
+const currentQuestionIndex = 0;
+const score = 0;
 
 // Event listener for the start button
 startBtnEL.addEventListener("click", () => {

@@ -53,7 +53,7 @@ header a {
 
 #menu>li {
     font-weight: bold;
-    padding: 0 2rem;
+    padding: 0.5rem 2rem;
 }
 
 .active {
@@ -65,9 +65,11 @@ header a {
 nav {
     display: none;
     position: absolute;
-    width: 100%;
+    width: 50%;
     top: 5.5rem;
     background: linear-gradient(to bottom, #FFD700, #FFA500);
+    left: 0;
+    height: 1000%;
 }
 
 #nav-toggle:checked~nav {
@@ -123,6 +125,8 @@ nav {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    position: fixed;
+    bottom: 0;
 }
 
 .footer-content {
@@ -481,6 +485,7 @@ button {
         position: unset;
         width: unset;
         background: none;
+        height: 2rem;
     }
 
     #nav-toggle-label {

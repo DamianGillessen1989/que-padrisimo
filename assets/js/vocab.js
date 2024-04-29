@@ -1,11 +1,11 @@
 // JS for vocab.html Flashcard game
 
 // Variables
-let currentCard = 1;
-let totalCards = 50;
+const currentCard = 1;
+const totalCards = 50;
 
 // Flashcards Array
-let flashcards = [
+const flashcards = [
     { question: 'Hello', answer: 'Hola (OH-lah)' },
     { question: 'Goodbye', answer: 'Adiós (ah-DYOHSS)' },
     { question: 'Yes', answer: 'Sí (see)' },
