@@ -60,7 +60,7 @@ header a {
     border-bottom: 1px solid #3a3a3a;
 }
 
-/* Nav bar */
+/* --------- Nav bar */
 
 nav {
     display: none;
@@ -312,7 +312,7 @@ button#start-btn:focus {
     outline: none;
 }
 
-/** -------- Memoria Game */
+/** --------- Memoria Game */
 
 
 /** --------- Flashcard Game */
@@ -462,7 +462,7 @@ button {
 
 }
 
-/* Media query: tablets and larger (768px and up) */
+/* --------- Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
 
     /* Header */
@@ -504,13 +504,13 @@ button {
         width: 85%;
     }
 
-    /* Footer */
+    /* --------- Footer */
     .footer {
         position: fixed;
         bottom: 0;
     }
 
-    /* Quiz */
+    /* --------- Quiz */
     .quiz {
         padding: 20px 0;
     }

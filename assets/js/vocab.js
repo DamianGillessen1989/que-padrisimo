@@ -97,7 +97,6 @@ corresponding values from the flashcards array.
 function updateFlashcard() {
     let cardNumberElement = document.getElementById('cardNumber');
 
-    // Update the card number and text based on the current flashcard
     cardNumberElement.innerText = `${currentCard}/${totalCards}`;
     document.getElementById('questionText').innerText = flashcards[currentCard - 1].question;
     document.getElementById('answerText').innerText = flashcards[currentCard - 1].answer;
