@@ -1,6 +1,7 @@
 // JS for index.html Quiz game
 
-const questions = [
+// Array of objects containing questions and answers
+let questions = [
     {
         question: "Necesito la ____ para cocinar la cena. (Choose the correct word below)",
         answers: [
@@ -183,86 +184,132 @@ const questions = [
     }
 ];
 
-const questionEL = document.getElementById("question");
-const answerButtonsEL = document.getElementById("answer-buttons");
-const nextBtnEL = document.getElementById("next-btn");
-const quitBtnEL = document.getElementById("quit-btn");
+// DOM elements
+let questionEL = document.getElementById("question");
+let answerButtonsEL = document.getElementById("answer-buttons");
+let nextBtnEL = document.getElementById("next-btn");
+let quitBtnEL = document.getElementById("quit-btn");
 
+// Variables to keep track of current question index and score
 let currentQuestionIndex = 0;
 let score = 0;
 
-const startBtnEL = document.getElementById("start-btn");
-const quizContainerEL = document.querySelector(".quiz");
+let startBtnEL = document.getElementById("start-btn");
+let quizContainerEL = document.querySelector(".quiz");
 
+// Event listener for the start button
 startBtnEL.addEventListener("click", () => {
     startQuiz();
+    // Show the quiz container and hide the start button
     quizContainerEL.classList.remove("hidden");
     startBtnEL.style.display = "none";
 });
 
+/* The startQuiz Function - The startQuiz function starts the quiz by resetting the current question index
+and the score to zero, which then sets up the 'Next' button and shows the first question.
+ */
 function startQuiz() {
+    // Reset current question index and score
     currentQuestionIndex = 0;
     score = 0;
+    // Set the next button text
     nextBtnEL.innerHTML = "Next";
+    // Display the first question
     showQuestion();
 }
+// Event listener for the quit button
 quitBtnEL.addEventListener("click", () => {
+    // Hide the quiz container and show the start button
     quizContainerEL.classList.add("hidden");
     startBtnEL.style.display = "block";
 });
 
+/* The showQuestion Function - The showQuestion function displays the current question along with
+its possible options. It resets the state of the answer buttons and assigns them event listeners.
+*/
 function showQuestion() {
+    // Reset the answer buttons
     resetState();
+    // Get the current question object
     let currentQuestion = questions[currentQuestionIndex];
+    // Calculate the question number
     let questionNo = currentQuestionIndex + 1;
+    // Display the question
     questionEL.innerHTML = `Question ${questionNo} of ${questions.length}: ${currentQuestion.question}`;
 
+    // Loop through answers and create buttons
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
         button.innerHTML = answer.text;
         button.classList.add("btn");
         answerButtonsEL.appendChild(button);
 
+        // Set data attribute for correct answer
         if (answer.correct) {
             button.dataset.correct = answer.correct;
         }
+        // Add event listener for answer selection
         button.addEventListener("click", selectAnswer);
     });
 }
 
+/* The resetState Function - The resetState function resets the state of the answer buttons by hiding
+the 'Next' button and removing all child elements from the answer buttons element.
+*/
 function resetState() {
+    // Hide the next button
     nextBtnEL.style.visibility = "hidden";
+    // Remove all answer buttons
     while (answerButtonsEL.firstChild) {
         answerButtonsEL.removeChild(answerButtonsEL.firstChild);
     }
 }
 
+/* The selectAnswer Function - The selectAnswer function is called when the user selects an answer.
+It checks if the selected answer is correct, updates the score, disables all answer buttons, and shows
+the 'Next' button.
+*/
 function selectAnswer(e) {
-    const selectedBtn = e.target;
-    const isCorrect = selectedBtn.dataset.correct === "true";
+    let selectedBtn = e.target;
+    let isCorrect = selectedBtn.dataset.correct === "true";
+    // Add classes based on correctness
     if (isCorrect) {
         selectedBtn.classList.add("correct");
         score++;
     } else {
         selectedBtn.classList.add("incorrect");
     }
+    // Disable all answer buttons
     Array.from(answerButtonsEL.children).forEach(button => {
         if (button.dataset.correct === "true") {
             button.classList.add("correct");
         }
         button.disabled = true;
     });
+    // Show the next button
     nextBtnEL.style.visibility = "visible";
 }
 
+/* The showScore Function - The showScore function displays the final score after
+the quiz is completed and enables the user to play again.
+*/
 function showScore() {
+    // Reset the answer buttons
     resetState();
+    // Display the score
     questionEL.innerHTML = `You scored ${score} out of ${questions.length}!`;
+    // Change next button text
     nextBtnEL.innerHTML = "Play Again";
+    // Show the next button
     nextBtnEL.style.visibility = "visible";
 }
 
+/* The handleNextButton Function - The handleNextBurron function is called when the 'Next'
+button is clicked. It checks if there are more questions to display and either shows the 
+next question or the final score.
+*/
 function handleNextButton() {
+    // Move to the next question or show the final score
     currentQuestionIndex++;
     if (currentQuestionIndex < questions.length) {
         showQuestion();
@@ -271,6 +318,9 @@ function handleNextButton() {
     }
 }
 
+/* Event Listeners - Event listeners are added to the 'Start Quiz', 'Next', and 'Quit' buttons to trigger
+the appropriate actions when clicked.
+*/
 nextBtnEL.addEventListener("click", () => {
     if (currentQuestionIndex < questions.length) {
         handleNextButton();
@@ -283,4 +333,5 @@ quitBtnEL.addEventListener("click", () => {
     startQuiz();
 });
 
+// Start the quiz when the page loads
 startQuiz();
