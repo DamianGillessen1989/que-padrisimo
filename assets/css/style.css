@@ -163,18 +163,18 @@ nav {
 }
 
 .app {
-    background: #ffffff7b;
+    background: #F5F5F5;
     width: 90%;
-    max-width: 600px;
-    border-radius: 10px;
+    max-width: 500px;
     padding: 20px;
     position: relative;
-    height: 27.6rem;
+    height: 72%;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .app>h1 {
@@ -532,6 +532,7 @@ button {
 
     .app>h1 {
         font-size: 25px;
+        color: #1e3050;
     }
 
     .quiz>h2 {
