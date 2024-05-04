@@ -48,7 +48,21 @@
     </h1>
 
     <div class="game-area">
-
+        <div class="content">
+            <div class="con">
+              <h1 class="hidden" id="task"></h1>
+              <p id="hint" class="hidden"></p> 
+              <input id="input" type="text" class="hidden">
+              <h2 class="hidden" id="msg"></h2>
+              <button id="Nxtbtn">Click here to start</button>
+              <button id="Checkbtn" class="hidden">Guess</button>
+            </div>
+            <div id="score">
+              <h2>Attempts : <span id="attempted"></span></h2>
+              <h2>Correct : <span id="corrects"></span></h2>
+            </div>
+          </div>
+        </div>
     </div>
 
     <footer class="footer">
@@ -80,7 +94,7 @@
         </div>
     </footer>
 
-    <script src="assets/js/memoria.js"></script>
+    <script src="assets/js/scramble.js"></script>
     <!-- Font Awesome kit -->
     <script src="https://kit.fontawesome.com/73bf3ff091.js" crossorigin="anonymous"></script>
 </body>

@@ -197,6 +197,7 @@ startBtnEL.addEventListener("click", () => {
     startQuiz();
     quizContainerEL.classList.remove("hidden");
     startBtnEL.style.display = "none";
+    document.querySelector('.app').style.height = '97%'; // Adjusting the height of .app class
 });
 
 /* The startQuiz Function - The startQuiz function starts the quiz by resetting the current question index
@@ -302,7 +303,9 @@ nextBtnEL.addEventListener("click", () => {
 });
 
 quitBtnEL.addEventListener("click", () => {
-    startQuiz();
+    quizContainerEL.classList.add("hidden");
+    startBtnEL.style.display = "block";
+    document.querySelector('.app').style.height = '72%'; 
 });
 
 startQuiz();
