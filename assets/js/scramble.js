@@ -194,3 +194,10 @@ Checkbtn.addEventListener('click', () => {
 quitBtn.addEventListener('click', () => {
     location.reload(); // Refresh the page
 });
+
+input.addEventListener('keypress', (event) => {
+    if (event.key === 'Enter') {
+        // Trigger click event on the Check button
+        Checkbtn.click();
+    }
+});
