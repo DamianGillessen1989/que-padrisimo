@@ -323,6 +323,7 @@ button#start-btn:focus {
     flex-direction: column;
     background-color: #F5F5F5;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
 }
 
 .con {
@@ -346,7 +347,7 @@ button#start-btn:focus {
 }
 
 .con>h2 {
-    margin: 10px;
+    margin: 0 10px -2rem;
     font-weight: lighter;
     text-align: center;
 }
@@ -380,7 +381,7 @@ button#start-btn:focus {
     text-align: center;
 }
 
-.hidden {
+.hiddenTwo {
     display: none;
 }
 
@@ -412,10 +413,26 @@ button#start-btn:focus {
     opacity: 0.8;
     background-color: #f0f0f0;
     color: #1e3050;
+    position: relative;
+    left: -3rem;
+    bottom: 0.1rem;
 }
 
 .bordered {
     border-bottom: 1px solid #cdcdcd;
+}
+
+#quitBtnTwo {
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid #f0f0f0;
+    background-color: #1e3050;
+    color: #f0f0f0;
+    position: relative;
+    bottom: -2.45rem;
+    left: 4rem;
+    width: 7rem;
 }
 
 /** --------- Flashcard Game */

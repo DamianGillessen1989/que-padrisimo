@@ -8,6 +8,7 @@ const score = document.querySelector('#score')
 const attempted = document.querySelector('#attempted')
 const corrects = document.querySelector('#corrects')
 const hint = document.querySelector('#hint'); // Added this line to get the hint element
+const quitBtn = document.querySelector('#quitBtnTwo');
 
 // GLOBAL VARIABLES >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 const wordBank = [
@@ -56,7 +57,7 @@ const wordBank = [
         hint: "A small, domesticated feline animal"
     },
     {
-        word: "música",
+        word: "musica",
         hint: "Sounds that you enjoy listening to"
     },
     {
@@ -84,7 +85,7 @@ const wordBank = [
         hint: "Color of grass"
     },
     {
-        word: "jardín",
+        word: "jardin",
         hint: "Area with plants and flowers"
     },
     {
@@ -130,6 +131,7 @@ Nxtbtn.addEventListener('click', () => {
     msg.classList.add('hidden');
     Nxtbtn.classList.add('hidden');
     Nxtbtn.innerHTML = 'Next word';
+    quitBtn.classList.remove('hiddenTwo');
     Checkbtn.classList.remove('hidden');
     task.classList.remove('hidden');
     input.value = '';
@@ -142,6 +144,24 @@ Nxtbtn.addEventListener('click', () => {
     task.innerHTML = sWord;
     hint.innerHTML = wordHint;
 
+    const content = document.querySelector('.content');
+    content.style.height = '93%';
+
+    const con = document.querySelector('.con');
+    con.style.height = '25.5rem';
+
+    // Change style of the Nxtbtn
+    Nxtbtn.style.borderRadius = '5px';
+    Nxtbtn.style.cursor = 'pointer';
+    Nxtbtn.style.padding = '0.5rem 0.6rem';
+    Nxtbtn.style.border = '1px solid #f0f0f0';
+    Nxtbtn.style.opacity = '0.8';
+    Nxtbtn.style.backgroundColor = '#f0f0f0';
+    Nxtbtn.style.color = '#1e3050';
+    Nxtbtn.style.position = 'relative';
+    Nxtbtn.style.left = '-3rem';
+    Nxtbtn.style.bottom = '-5rem';
+
     // Toggle border-bottom style
     if (Nxtbtn.classList.contains('bordered')) {
         Nxtbtn.classList.remove('bordered');
@@ -149,6 +169,7 @@ Nxtbtn.addEventListener('click', () => {
         Nxtbtn.classList.add('bordered');
     }
 });
+
 
 Checkbtn.addEventListener('click', () => {
     att += 1
@@ -169,3 +190,7 @@ Checkbtn.addEventListener('click', () => {
     attempted.innerHTML = att
     corrects.innerHTML = scr
 })
+
+quitBtn.addEventListener('click', () => {
+    location.reload(); // Refresh the page
+});
