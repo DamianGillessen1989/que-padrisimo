@@ -159,7 +159,7 @@ Nxtbtn.addEventListener('click', () => {
     Nxtbtn.style.backgroundColor = '#f0f0f0';
     Nxtbtn.style.color = '#1e3050';
     Nxtbtn.style.position = 'relative';
-    Nxtbtn.style.left = '-3rem';
+    Nxtbtn.style.left = '3rem';
     Nxtbtn.style.bottom = '-5rem';
 
     // Hide the 'scramble-header' h1 element

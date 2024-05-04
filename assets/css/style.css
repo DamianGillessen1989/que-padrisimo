@@ -317,7 +317,7 @@ button#start-btn:focus {
 /** --------- Word Scramble Game */
 
 .content {
-    width: 422px;
+    width: 338px;
     height: 72%;
     display: flex;
     align-items: center;
@@ -341,6 +341,7 @@ button#start-btn:focus {
     padding: 1rem 2.5rem;
     border: 1px solid #f0f0f0;
     opacity: 0.8;
+    width: 21rem;
 }
 
 .con>h1 {
@@ -378,7 +379,7 @@ button#start-btn:focus {
     margin-top: 100px;
     padding: 20px;
     position: fixed;
-    bottom: 7rem;
+    bottom: 6rem;
 }
 
 .score>h2 {
@@ -418,7 +419,7 @@ button#start-btn:focus {
     background-color: #f0f0f0;
     color: #1e3050;
     position: relative;
-    left: -3rem;
+    left: 3rem;
     bottom: 0.1rem;
 }
 
@@ -435,7 +436,7 @@ button#start-btn:focus {
     color: #f0f0f0;
     position: relative;
     bottom: -2.45rem;
-    left: 4rem;
+    left: -4rem;
     width: 7rem;
 }
 
@@ -676,5 +677,11 @@ button {
 
     #social-networks {
         margin-bottom: 0;
+    }
+
+    /* -------- Scramble */
+
+    .content {
+        width: 422px;
     }
 }
