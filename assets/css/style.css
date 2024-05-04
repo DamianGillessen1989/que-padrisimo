@@ -326,7 +326,7 @@ button#start-btn:focus {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.flash-intro {
+.page-intro {
     font-size: 1.2rem;
     margin: 0.5rem 0;
 }
