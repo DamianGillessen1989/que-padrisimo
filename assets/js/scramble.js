@@ -181,7 +181,8 @@ Nxtbtn.addEventListener('click', () => {
 Checkbtn.addEventListener('click', () => {
     att += 1
     msg.classList.remove('hidden')
-    if (input.value === nWord) {
+    // Convert both input value and nWord to lowercase for case-insensitive comparison
+    if (input.value.toLowerCase() === nWord.toLowerCase()) {
         scr += 1
         msg.innerHTML = 'Correct answer 😁'
         msg.style.color = 'rgb(194, 238, 0)'
