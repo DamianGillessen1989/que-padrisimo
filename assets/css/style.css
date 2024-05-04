@@ -116,6 +116,7 @@ nav {
     height: 100vh;
     margin: 0;
     border-radius: 8px;
+    flex-direction: column;
 }
 
 /* --------- Footer */
@@ -323,7 +324,7 @@ button#start-btn:focus {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 1rem;
+    margin-top: 6rem;
     background-color: #F5F5F5;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -376,10 +377,9 @@ button#start-btn:focus {
     width: 100%;
     max-width: 400px;
     justify-content: space-between;
-    margin-top: 100px;
+    margin-top: 2rem;
     padding: 20px;
-    position: fixed;
-    bottom: 6rem;
+    position: relative;
 }
 
 .score>h2 {
@@ -444,7 +444,7 @@ button#start-btn:focus {
 
 .flashcard {
     position: relative;
-    width: 30rem;
+    width: 21rem;
     height: 20rem;
     perspective: 1000px;
     font-size: 2.5rem;
@@ -683,5 +683,10 @@ button {
 
     .content {
         width: 422px;
+    }
+
+    /* -------- Flashcards */
+    .flashcard {
+        width: 30rem;
     }
 }
