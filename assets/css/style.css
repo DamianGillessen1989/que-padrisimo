@@ -324,7 +324,6 @@ button#start-btn:focus {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 6rem;
     background-color: #F5F5F5;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }

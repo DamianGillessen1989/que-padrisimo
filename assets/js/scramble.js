@@ -116,8 +116,15 @@ let scr = 0
 
 // CREATEWORDS FUNCTION (this will take a random word from wordBank)>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 const createWords = () => {
-    let random = Math.floor(Math.random() * wordBank.length)
-    return wordBank[random]
+    if (wordBank.length === 0) {
+        // If wordBank is empty, return null or handle the scenario accordingly
+        return null;
+    }
+    let randomIndex = Math.floor(Math.random() * wordBank.length);
+    let selectedWord = wordBank[randomIndex];
+    // Remove the selected word from wordBank
+    wordBank.splice(randomIndex, 1);
+    return selectedWord;
 }
 
 // SCRAMBLE FUNCTION (this will scramble the word obtained in parameter and return the scrambled word)>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -146,6 +153,7 @@ Nxtbtn.addEventListener('click', () => {
 
     const content = document.querySelector('.content');
     content.style.height = '93%';
+    content.style.marginTop = '6rem';
 
     const con = document.querySelector('.con');
     con.style.height = '25.5rem';
@@ -167,7 +175,7 @@ Nxtbtn.addEventListener('click', () => {
     scrambleHeader.style.display = 'none';
 
     const scoreElement = document.querySelector('#score');
-    scoreElement.style.display = 'flex';
+    scoreElement.style.display = 'flex';    
 
     // Toggle border-bottom style
     if (Nxtbtn.classList.contains('bordered')) {
