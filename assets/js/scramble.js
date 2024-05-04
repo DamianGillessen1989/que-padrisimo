@@ -1,4 +1,5 @@
-// GETTING DOM ELEMENTS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// JS for scramble.html Word Scramble game
+
 const task = document.querySelector('#task')
 const msg = document.querySelector('#msg')
 const input = document.querySelector('#input')
@@ -10,7 +11,6 @@ const corrects = document.querySelector('#corrects')
 const hint = document.querySelector('#hint'); // Added this line to get the hint element
 const quitBtn = document.querySelector('#quitBtnTwo');
 
-// GLOBAL VARIABLES >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 const wordBank = [
     {
         word: "casa",
@@ -114,26 +114,21 @@ let nWord;
 let att = 0
 let scr = 0
 
-// CREATEWORDS FUNCTION (this will take a random word from wordBank)>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 const createWords = () => {
     if (wordBank.length === 0) {
-        // If wordBank is empty, return null or handle the scenario accordingly
         return null;
     }
     let randomIndex = Math.floor(Math.random() * wordBank.length);
     let selectedWord = wordBank[randomIndex];
-    // Remove the selected word from wordBank
     wordBank.splice(randomIndex, 1);
     return selectedWord;
 }
 
-// SCRAMBLE FUNCTION (this will scramble the word obtained in parameter and return the scrambled word)>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 const scramble = (word) => {
     let sWordArr = word.split('').sort()
     return sWordArr.join('')
 }
 
-// ADDING EVENT HANDLER TO BUTTON >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 Nxtbtn.addEventListener('click', () => {
     msg.classList.add('hidden');
     Nxtbtn.classList.add('hidden');
@@ -150,6 +145,7 @@ Nxtbtn.addEventListener('click', () => {
     console.log(nWord, sWord);
     task.innerHTML = sWord;
     hint.innerHTML = wordHint;
+    input.focus();
 
     const content = document.querySelector('.content');
     content.style.height = '93%';
@@ -158,7 +154,6 @@ Nxtbtn.addEventListener('click', () => {
     const con = document.querySelector('.con');
     con.style.height = '25.5rem';
 
-    // Change style of the Nxtbtn
     Nxtbtn.style.borderRadius = '5px';
     Nxtbtn.style.cursor = 'pointer';
     Nxtbtn.style.padding = '0.5rem 0.6rem';
@@ -170,14 +165,12 @@ Nxtbtn.addEventListener('click', () => {
     Nxtbtn.style.left = '3rem';
     Nxtbtn.style.bottom = '-5rem';
 
-    // Hide the 'scramble-header' h1 element
     const scrambleHeader = document.querySelector('.scramble-header');
     scrambleHeader.style.display = 'none';
 
     const scoreElement = document.querySelector('#score');
     scoreElement.style.display = 'flex';    
 
-    // Toggle border-bottom style
     if (Nxtbtn.classList.contains('bordered')) {
         Nxtbtn.classList.remove('bordered');
     } else {
@@ -185,35 +178,61 @@ Nxtbtn.addEventListener('click', () => {
     }
 });
 
+let enterPressed = false;
 
 Checkbtn.addEventListener('click', () => {
-    att += 1
-    msg.classList.remove('hidden')
-    // Convert both input value and nWord to lowercase for case-insensitive comparison
-    if (input.value.toLowerCase() === nWord.toLowerCase()) {
-        scr += 1
-        msg.innerHTML = 'Correct answer 😁'
-        msg.style.color = 'rgb(194, 238, 0)'
-    } else if (input.value === '') {
-        msg.innerHTML = `Answer is <span>${nWord}</span>`
-        msg.style.color = 'red'
-    } else {
-        msg.innerHTML = `Wrong answer 😑<br>correct answer is <span>${nWord}</span>`
-        msg.style.color = 'red'
+    if (enterPressed) {
+        return;
     }
-    Checkbtn.classList.add('hidden')
-    Nxtbtn.classList.remove('hidden')
-    attempted.innerHTML = att
-    corrects.innerHTML = scr
-})
+
+    checkAnswer();
+});
+
+const handleEnterKeyPress = (event) => {
+    if (event.key === 'Enter' && !enterPressed) {
+        checkAnswer();
+        enterPressed = true;
+    } else if (event.key === 'Enter' && enterPressed) {
+        event.preventDefault();
+    }
+};
+
+document.addEventListener('keypress', handleEnterKeyPress);
+
+const checkAnswer = () => {
+    att += 1;
+    msg.classList.remove('hidden');
+    if (input.value.toLowerCase() === nWord.toLowerCase()) {
+        scr += 1;
+        msg.innerHTML = 'Correct answer 😁';
+        msg.style.color = 'rgb(194, 238, 0)';
+    } else if (input.value === '') {
+        msg.innerHTML = `Answer is <span>${nWord}</span>`;
+        msg.style.color = 'red';
+    } else {
+        msg.innerHTML = `Wrong answer 😑<br>correct answer is <span>${nWord}</span>`;
+        msg.style.color = 'red';
+    }
+    Checkbtn.classList.add('hidden');
+    Nxtbtn.classList.remove('hidden');
+    attempted.innerHTML = att;
+    corrects.innerHTML = scr;
+};
+
+Nxtbtn.addEventListener('click', () => {
+    enterPressed = false;
+});
+
+Nxtbtn.addEventListener('click', () => {
+    enterPressed = false;
+});
 
 quitBtn.addEventListener('click', () => {
-    location.reload(); // Refresh the page
+    location.reload(); 
 });
 
 input.addEventListener('keypress', (event) => {
     if (event.key === 'Enter') {
-        // Trigger click event on the Check button
         Checkbtn.click();
     }
 });
