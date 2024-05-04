@@ -162,6 +162,13 @@ Nxtbtn.addEventListener('click', () => {
     Nxtbtn.style.left = '-3rem';
     Nxtbtn.style.bottom = '-5rem';
 
+    // Hide the 'scramble-header' h1 element
+    const scrambleHeader = document.querySelector('.scramble-header');
+    scrambleHeader.style.display = 'none';
+
+    const scoreElement = document.querySelector('#score');
+    scoreElement.style.display = 'flex';
+
     // Toggle border-bottom style
     if (Nxtbtn.classList.contains('bordered')) {
         Nxtbtn.classList.remove('bordered');

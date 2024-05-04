@@ -321,9 +321,9 @@ button#start-btn:focus {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-top: 1rem;
     background-color: #F5F5F5;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    
 }
 
 .con {
@@ -375,6 +375,8 @@ button#start-btn:focus {
     justify-content: space-between;
     margin-top: 100px;
     padding: 20px;
+    position: fixed;
+    bottom: 7rem;
 }
 
 .score>h2 {
@@ -396,7 +398,7 @@ button#start-btn:focus {
     color: white;
 }
 
-#scramble-h1 {
+.scramble-header {
     font-size: 25px;
     color: #1e3050;
     font-weight: bold;
