@@ -2,8 +2,8 @@
 const task = document.querySelector('#task')
 const msg = document.querySelector('#msg')
 const input = document.querySelector('#input')
-const Nxtbtn = document.querySelector('#Nxtbtn')
-const Checkbtn = document.querySelector('#Checkbtn')
+const Nxtbtn = document.querySelector('#nxtBtn')
+const Checkbtn = document.querySelector('#checkBtn')
 const score = document.querySelector('#score')
 const attempted = document.querySelector('#attempted')
 const corrects = document.querySelector('#corrects')
@@ -127,21 +127,28 @@ const scramble = (word) => {
 
 // ADDING EVENT HANDLER TO BUTTON >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 Nxtbtn.addEventListener('click', () => {
-    msg.classList.add('hidden')
-    Nxtbtn.classList.add('hidden')
-    Nxtbtn.innerHTML = 'Next word'
-    Checkbtn.classList.remove('hidden')
-    task.classList.remove('hidden')
-    input.value = ''
-    input.classList.remove('hidden')
+    msg.classList.add('hidden');
+    Nxtbtn.classList.add('hidden');
+    Nxtbtn.innerHTML = 'Next word';
+    Checkbtn.classList.remove('hidden');
+    task.classList.remove('hidden');
+    input.value = '';
+    input.classList.remove('hidden');
     hint.classList.remove('hidden');
-    const { word, hint: wordHint } = createWords(); // Changed hint variable name to wordHint
-    nWord = word
-    let sWord = scramble(word)
-    console.log(nWord, sWord)
-    task.innerHTML = sWord
-    hint.innerHTML = wordHint; // Setting the hint
-})
+    const { word, hint: wordHint } = createWords();
+    nWord = word;
+    let sWord = scramble(word);
+    console.log(nWord, sWord);
+    task.innerHTML = sWord;
+    hint.innerHTML = wordHint;
+
+    // Toggle border-bottom style
+    if (Nxtbtn.classList.contains('bordered')) {
+        Nxtbtn.classList.remove('bordered');
+    } else {
+        Nxtbtn.classList.add('bordered');
+    }
+});
 
 Checkbtn.addEventListener('click', () => {
     att += 1
@@ -161,5 +168,4 @@ Checkbtn.addEventListener('click', () => {
     Nxtbtn.classList.remove('hidden')
     attempted.innerHTML = att
     corrects.innerHTML = scr
-    score.style.display = 'flex'
 })

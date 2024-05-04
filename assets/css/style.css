@@ -315,76 +315,107 @@ button#start-btn:focus {
 /** --------- Word Scramble Game */
 
 .content {
-  width: 100%;
-  height: 85vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: rgb(155, 151, 105);
+    width: 422px;
+    height: 72%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #F5F5F5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .con {
-  width: 100%;
-  max-width: 400px;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  background-color: rgb(80, 78, 53);
+    max-width: 400px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #001f3f;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 1rem 2.5rem;
+    border: 1px solid #f0f0f0;
+    opacity: 0.8;
 }
 
 .con>h1 {
-  margin: 20px;
-  color: white;
+    margin: 20px;
+    color: white;
 }
 
 .con>h2 {
-  margin: 10px;
-  font-weight: lighter;
-  text-align: center;
+    margin: 10px;
+    font-weight: lighter;
+    text-align: center;
 }
 
 #input {
-  margin: 20px;
-  padding: 10px 20px;
-  min-width: 300px;
-  border-radius: 30px;
-  font-size: 20px;
-  outline: none;
-  border: none;
-  color: black;
-  font-weight: bolder;
+    margin: 20px;
+    padding: 10px 20px;
+    min-width: 300px;
+    border-radius: 30px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    color: black;
+    font-weight: bolder;
 }
 
 #msg>span {
-  color: rgb(194, 238, 0);
+    color: rgb(194, 238, 0);
 }
 
 #score {
-  display: none;
-  width: 100%;
-  max-width: 400px;
-  justify-content: space-between;
-  margin-top: 100px;
-  padding: 20px;
+    display: none;
+    width: 100%;
+    max-width: 400px;
+    justify-content: space-between;
+    margin-top: 100px;
+    padding: 20px;
 }
 
 .score>h2 {
-  text-align: center;
+    text-align: center;
 }
 
 .hidden {
-  display: none;
+    display: none;
 }
 
 #hint {
     font-size: 16px;
     font-style: italic;
-    color: #666;
+    color: #f0f0f0;
     margin-top: 10px;
+}
+
+#nxtBtn {
+    color: white;
+}
+
+#scramble-h1 {
+    font-size: 25px;
+    color: #1e3050;
+    font-weight: bold;
+    border-bottom: 1px solid #cdcdcd;
+    padding-bottom: .7rem;
+    margin-bottom: 5rem;
+}
+
+#checkBtn {
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid #f0f0f0;
+    opacity: 0.8;
+    background-color: #f0f0f0;
+    color: #1e3050;
+}
+
+.bordered {
+    border-bottom: 1px solid #cdcdcd;
 }
 
 /** --------- Flashcard Game */
