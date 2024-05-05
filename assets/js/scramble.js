@@ -169,7 +169,7 @@ Nxtbtn.addEventListener('click', () => {
     scrambleHeader.style.display = 'none';
 
     const scoreElement = document.querySelector('#score');
-    scoreElement.style.display = 'flex';    
+    scoreElement.style.display = 'flex';
 
     if (Nxtbtn.classList.contains('bordered')) {
         Nxtbtn.classList.remove('bordered');
@@ -228,7 +228,7 @@ Nxtbtn.addEventListener('click', () => {
 });
 
 quitBtn.addEventListener('click', () => {
-    location.reload(); 
+    location.reload();
 });
 
 input.addEventListener('keypress', (event) => {

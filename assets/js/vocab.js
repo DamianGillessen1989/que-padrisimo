@@ -62,11 +62,6 @@ function flipCard() {
     card.classList.toggle('flipped');
 }
 
-/*
-The showNextCard Function - the showNextCard function increments the currentCard variable by 1 
-if it is less than totalCards. Then it calls the updateFlashcard function which updates the
-displayed flashcard and also removes the 'flipped' class from the flashcard element.
-*/
 function showNextCard() {
     if (currentCard < totalCards) {
         currentCard++;
@@ -75,11 +70,6 @@ function showNextCard() {
     }
 }
 
-/*
-The showPreviousCard Function - the showPreviousCard Function is similar to the showNextCardFunction. It 
-decrements the currentCard variable by 1 if it is greater than 1. Then it calls the updateFlashcard function
-which updates the displayed flashcard and then removes the 'flipped' class from the flashcard element.
-*/
 function showPreviousCard() {
     if (currentCard > 1) {
         currentCard--;
@@ -88,12 +78,6 @@ function showPreviousCard() {
     }
 }
 
-/*
-The updateFlashcard Function - the updateFlashcard Function is a function that updates the displayed
-flashcard using the currentCard variable. It retrieves the card number element, question element, and
-answer element from the HTML using IDs. Then it updates the text content of the elements with the
-corresponding values from the flashcards array.
-*/
 function updateFlashcard() {
     let cardNumberElement = document.getElementById('cardNumber');
 
@@ -102,12 +86,6 @@ function updateFlashcard() {
     document.getElementById('answerText').innerText = flashcards[currentCard - 1].answer;
 }
 
-/*
-The showRandomCard Function - the showRandomCard function is a function that generates a random
-number between 1 and 'totalCards' using Math.random() and Math.floor(). It then assigns the
-generated random number to the 'currentCard' variable. Finally, it then calls the 'updateFlashcard'
-function which updates the displayed flashcard and removes the 'flipped' class from the flashcard element.
-*/
 function showRandomCard() {
     let randomCard = Math.floor(Math.random() * totalCards) + 1;
     currentCard = randomCard;
