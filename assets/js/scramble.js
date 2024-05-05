@@ -226,9 +226,3 @@ Nxtbtn.addEventListener('click', () => {
 quitBtn.addEventListener('click', () => {
     location.reload();
 });
-
-input.addEventListener('keypress', (event) => {
-    if (event.key === 'Enter') {
-        Checkbtn.click();
-    }
-});
