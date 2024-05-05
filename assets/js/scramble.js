@@ -223,10 +223,6 @@ Nxtbtn.addEventListener('click', () => {
     enterPressed = false;
 });
 
-Nxtbtn.addEventListener('click', () => {
-    enterPressed = false;
-});
-
 quitBtn.addEventListener('click', () => {
     location.reload();
 });
