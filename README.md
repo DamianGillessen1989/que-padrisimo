@@ -10,7 +10,7 @@ Developed using a combination of HTML, CSS and JavaScript, this project serves a
 
 In this readme, I will delve into the project's development process, detailing the planning stages, design considerations, implementation of key features, and the technologies utilised. I hope you find this project both informative and inspiring as you explore the world of Latin-Spanish language learning. Thank you for joining me on this exciting endeavor!
 
-![Responsive Mockup](https://github.com/DamianGillessen1989/que-padrisimo/blob/main/docs/amiresponsiveimage.png)
+![Responsive Mockup](https://github.com/DamianGillessen1989/que-padrisimo/blob/main/docs/amiresponsiveimage.webp)
 
 The live link can be found here - [https://damiangillessen1989.github.io/que-padrisimo/](https://damiangillessen1989.github.io/que-padrisimo/)
 
