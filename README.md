@@ -8,7 +8,7 @@ The goal of this project is to create an engaging platform for learning Latin-Sp
 
 Developed using a combination of HTML, CSS and Java Script, this project serves as a dynamic web application where users can immerse themselves in the language learning process. From vocabulary drills to grammar exercises, the site offers a range of features to support users at the beginning or intermediate stages of their learning journey.
 
-In this readme, I will delve into the project's development process, detailing the planning stages, design considerations, implementation of key features, and the technologies utilised. I hope you find this project both informative and inspiring as you explore the world of Latin-Spanish language learning. Thank you for joining me on this exciting endeavor!
+In this README, I will delve into the project's development process, detailing the planning stages, design considerations, implementation of key features, and the technologies utilised. I hope you find this project both informative and inspiring as you explore the world of Latin-Spanish language learning. Thank you for joining me on this exciting endeavor!
 
 ![Responsive Mockup](https://github.com/DamianGillessen1989/que-padrisimo/blob/main/docs/amiresponsiveimage.webp)
 
@@ -53,8 +53,9 @@ User Objectives:
     Goals for Returning Visitors:
 
     - Easily locate social media links.
-    - Understand the presented information and engage with the language learning content without difficulty.
-
+    - Understand the presented information.
+    - Engage with the language learning content without difficulty.
+    
 ### Planning Phase
 
 To ensure a systematic approach to project management, I structured the development process into three distinct phases:
@@ -100,7 +101,7 @@ Consistency in typography plays a pivotal role in maintaining readability and vi
 
 During the development phase, detailed sketches were created to outline the project's design and functionality across various screen sizes and devices.
 
-[Portfolio Wireframes](https://github.com/DamianGillessen1989/personal-portfolio-dg/blob/main/docs/que-padrisimo-wireframes.pdf)
+[Portfolio Wireframes](https://github.com/DamianGillessen1989/que-padrisimo/blob/main/docs/que-padrisimo-wireframes.webp)
 
 These wireframes served as a first-draft blueprint for page layouts and responsiveness. Iterative adjustments were made during development to enhance user experience and resolve usability challenges.
 
