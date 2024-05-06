@@ -155,7 +155,7 @@ const questions = [
         ]
     },
     {
-        question: "¿Dónde está el ____ de mi bicicleta? (Choose the correct word below)",
+        question: "¿Dónde está la ____ de mi bicicleta? (Choose the correct word below)",
         answers: [
             { text: "llave", correct: false },
             { text: "rueda", correct: true },
