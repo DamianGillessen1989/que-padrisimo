@@ -155,6 +155,10 @@ nav {
     margin: 0;
 }
 
+.error {
+    font-size: x-large;
+}
+
 /* --------- Quiz Game */
 
 *,
