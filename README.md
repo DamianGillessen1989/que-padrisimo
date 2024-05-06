@@ -154,7 +154,7 @@ The site structure is ultimately designed to be visually appealing, logically or
 
 ### Features to Implement:
 
-- One thing I tried to implement in this project but was not able to successfully execute it, was: I tried to move the long arrays of Spanish answers and questions to their own individual .json files, and 'fetch' the information from there in each .js file where appropriate. However after much testing I was unsuccessful in getting this to work - however, it does give me something to work on for next time, and, also, at least I am aware of why this would be the preferred methodology, in keeping with good JavaScript practices.
+- One thing I tried to implement in this project but was not able to successfully execute it, was: I tried to move the long arrays of Spanish answers and questions to their own individual .json files, and 'fetch' the information from there in each .js file where appropriate. However after much testing I was unsuccessful in getting this to work - however, it does give me something to work on for next time, and also, at least I am aware of why this would be the preferred methodology, in keeping with good JavaScript practices.
 - I would like one day to make a contact page with a functional contact form with email notification capabilities.
 - Potentially the incorporation of and use of dynamic educational resources such as gifs and videos.
 - A toggleable light/dark mode facility, allowing user browsing based on preferences.
