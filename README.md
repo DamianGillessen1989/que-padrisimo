@@ -101,7 +101,7 @@ Consistency in typography plays a pivotal role in maintaining readability and vi
 
 During the development phase, detailed sketches were created to outline the project's design and functionality across various screen sizes and devices.
 
-[Portfolio Wireframes](https://github.com/DamianGillessen1989/que-padrisimo/blob/main/docs/que-padrisimo-wireframes.webp)
+[Portfolio Wireframes](https://raw.githubusercontent.com/DamianGillessen1989/que-padrisimo/main/docs/que-padrisimo-wireframes.webp)
 
 These wireframes served as a first-draft blueprint for page layouts and responsiveness. Iterative adjustments were made during development to enhance user experience and resolve usability challenges.
 
@@ -138,18 +138,18 @@ The site structure is ultimately designed to be visually appealing, logically or
 ### Features Present:
 
 - Responsive navbar facilitating easy navigation.
-![Responsive Navbar](https://raw.githubusercontent.com/DamianGillessen1989/personal-portfolio-dg/main/docs/que-padrisimo-header-one.webp)
-![Responsive Navbar](https://raw.githubusercontent.com/DamianGillessen1989/personal-portfolio-dg/main/docs/que-padrisimo-header-two.webp)
+![Responsive Navbar](https://raw.githubusercontent.com/DamianGillessen1989/que-padrisimo/main/docs/que-padrisimo-header-one.webp)
+![Responsive Navbar](https://raw.githubusercontent.com/DamianGillessen1989/que-padrisimo/main/docs/que-padrisimo-header-two.webp)
 - Footer housing navigation links and social media icons.
-![Footer](https://raw.githubusercontent.com/DamianGillessen1989/personal-portfolio-dg/main/docs/que-padrisimo-footer.webp)
+![Footer](https://raw.githubusercontent.com/DamianGillessen1989/que-padrisimo/main/docs/que-padrisimo-footer.webp)
 - An attractive Game Area.that focuses users' attention with hopes of facilitating learning and focusing attention.
-![Game Area](https://raw.githubusercontent.com/DamianGillessen1989/personal-portfolio-dg/main/docs/que-padrisimo-game-area.webp)
+![Game Area](https://raw.githubusercontent.com/DamianGillessen1989/que-padrisimo/main/docs/que-padrisimo-game-area.webp)
 - The first game of the site, the Quiz. Users are presented with a 'start game button', then a question and 4 multiple choice answers. When they guess correctly they are appropriately informed, as if they guess incorrectly. Once the quiz is complete users are presented with their final score and the option to play again or quit the quiz and return.
-![Quiz Game](https://raw.githubusercontent.com/DamianGillessen1989/personal-portfolio-dg/main/docs/que-padrisimo-quiz.webp)
+![Quiz Game](https://raw.githubusercontent.com/DamianGillessen1989/que-padrisimo/main/docs/que-padrisimo-quiz.webp)
 - The second game of the site, the Word Scramble. Users are presented with a 'start game button', then a scrambled Spanish word and a clue in English, and a 'quit game' and 'guess' button respecitvely. They may type their answer and make their guess, and their attempts and scores are recorded and presented.
-![Word Scramble Game](https://raw.githubusercontent.com/DamianGillessen1989/personal-portfolio-dg/main/docs/que-padrisimo-scramble.webp)
+![Word Scramble Game](https://raw.githubusercontent.com/DamianGillessen1989/que-padrisimo/main/docs/que-padrisimo-scramble.webp)
 - The last game of the site, the Flashcards, vocab practice. Users are presented with a flashcard and it's English word on the front. Once ready they may click the flashcard to reveal the Spanish word and it's phonetical pronunciation.
-![Flashcards Practice](https://raw.githubusercontent.com/DamianGillessen1989/personal-portfolio-dg/main/docs/que-padrisimo-flashcard.webp)
+![Flashcards Practice](https://raw.githubusercontent.com/DamianGillessen1989/que-padrisimo/main/docs/que-padrisimo-flashcard.webp)
 
 ### Features to Implement:
 
