@@ -402,7 +402,7 @@ button#start-btn:focus {
 
 .scramble-header {
     font-size: 25px;
-    color: #1e3050;
+    color: #036444;
     font-weight: bold;
     border-bottom: 1px solid #cdcdcd;
     padding-bottom: .7rem;
@@ -657,7 +657,7 @@ button {
 
     .app>h1 {
         font-size: 25px;
-        color: #1e3050;
+        color: #036444;
     }
 
     .quiz>h2 {
