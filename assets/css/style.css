@@ -90,7 +90,7 @@ nav {
 .heading {
     text-align: center;
     font-size: 2.5rem;
-    margin: 1rem 0;
+    margin: 3rem 0 0;
     width: 75%;
     position: relative;
 }
@@ -452,7 +452,7 @@ button#start-btn:focus {
 
 .page-intro {
     font-size: 1.2rem;
-    margin: 0.5rem 0;
+    margin: 1.5rem 0 3rem;
 }
 
 .flash-paragraph {
@@ -608,8 +608,7 @@ button {
     }
 
     header img {
-        position:
-            left: -9rem;
+        left: -9rem;
     }
 
     nav {
