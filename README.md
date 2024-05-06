@@ -6,7 +6,7 @@ Welcome to The Que Padrísimo Latin-Spanish Language Learning site! This project
 
 The goal of this project is to create an engaging platform for learning Latin-Spanish language skills. By combining interactive elements, engaging lessons, and (hopefully) intuitive design, I aim to provide users with an effective and enjoyable learning experience.
 
-Developed using a combination of HTML, CSS and JavaScript, this project serves as a dynamic web application where users can immerse themselves in the language learning process. From vocabulary drills to grammar exercises, the site offers a range of features to support users at the beginning or intermediate stages of their learning journey.
+Developed using a combination of HTML, CSS and Java Script, this project serves as a dynamic web application where users can immerse themselves in the language learning process. From vocabulary drills to grammar exercises, the site offers a range of features to support users at the beginning or intermediate stages of their learning journey.
 
 In this readme, I will delve into the project's development process, detailing the planning stages, design considerations, implementation of key features, and the technologies utilised. I hope you find this project both informative and inspiring as you explore the world of Latin-Spanish language learning. Thank you for joining me on this exciting endeavor!
 
@@ -163,7 +163,8 @@ The site structure is ultimately designed to be visually appealing, logically or
 ### Development Tools and Frameworks:
 
 - [HTML](https://en.wikipedia.org/wiki/HTML) - Lays the framework for the project's main content.
-- [CSS](https://en.wikipedia.org/wiki/CSS) - Maintains a uniform style for all web content throughout the project..
+- [CSS](https://en.wikipedia.org/wiki/CSS) - Maintains a uniform style for all web content throughout the project.
+- [Java Script](https://en.wikipedia.org/wiki/JavaScript) - Provide site functionality and game functionality on the site.
 
 ### Styling and Design Elements:
 
@@ -199,54 +200,54 @@ A thorough testing approach was carried out to ensure the new site's optimal ope
 
 Several issues were identified and rectified during the Que Padrísimo website construction process to ensure optimal operation and user experience.
 
-- Initially, when clicked, the navbar links were displaying behind the body, causing them to be obscurred partially or entirely hidden from view and be un-usable. Upon investigation, it was discovered that the solution was simple. To fix this issue, I adjusted the z-index properties of the header element to ensure that it remains presented above the body content and remain visibal and useable at all time. [Header bug before-image](https://raw.githubusercontent.com/DamianGillessen1989/personal-portfolio-dg/main/docs/header-bug-before.webp) - [Header bug after-image](https://raw.githubusercontent.com/DamianGillessen1989/personal-portfolio-dg/main/docs/header-bug-after.webp)
+- Initially, when clicked, the navbar links were displaying behind the body, causing them to be obscurred partially or entirely hidden from view and be un-usable. Upon investigation, it was discovered that the solution was simple. To fix this issue, I adjusted the z-index properties of the header element to ensure that it remains presented above the body content and remain visibal and useable at all time. [Nav bar bug before-image](https://raw.githubusercontent.com/DamianGillessen1989/que-padrisimo/main/docs/nav-bar-bug-before.webp) - [Nav bar bug after-image](https://raw.githubusercontent.com/DamianGillessen1989/que-padrisimo/main/docs/nav-bar-bug-after.webp)
 
-- An issue arose with regards to the start button on the home page, for the 'Quiz' game. The button remained unstyled despite me adding the appopriate CSS styling rules and was not changing despite editing the CSS. After too much investigation I realised this was due to a simple typo in the HTML code for the class value of the button, after which I corrected and the issue was resolved. [Quiz Start Button bug before-image](https://raw.githubusercontent.com/DamianGillessen1989/personal-portfolio-dg/main/docs/skill-box-before.webp) - [Quiz Start Button bug after-image](https://raw.githubusercontent.com/DamianGillessen1989/personal-portfolio-dg/main/docs/skill-box-after.webp) [Quiz Start Button typo before-image](https://raw.githubusercontent.com/DamianGillessen1989/personal-portfolio-dg/main/docs/skill-box-before.webp) - [Quiz Start Button typo after-image](https://raw.githubusercontent.com/DamianGillessen1989/personal-portfolio-dg/main/docs/skill-box-after.webp)
+- An issue arose with regards to the start button on the home page, for the 'Quiz' game. The button remained unstyled despite me adding the appopriate CSS styling rules and was not changing despite editing the CSS. After too much investigation I realised this was due to a simple typo in the HTML code for the class value of the button, after which I corrected and the issue was resolved. [Quiz Start Button bug before-image](https://raw.githubusercontent.com/DamianGillessen1989/que-padrisimo/main/docs/quiz-before.webp) - [Quiz Start Button bug after-image](https://raw.githubusercontent.com/DamianGillessen1989/que-padrisimo/main/docs/quiz-after.webp) [Quiz Start Button typo before-image](https://raw.githubusercontent.com/DamianGillessen1989/que-padrisimo/main/docs/quiz-code-before.webp) - [Quiz Start Button typo after-image](https://raw.githubusercontent.com/DamianGillessen1989/que-padrisimo/main/docs/quiz-code-after.webp)
 
-- Upon inspection of the header section, an issue was identified where the logo image was not displaying correctly. The logo image appeared to be cropped, with half of it extending beyond the right-hand side of the screen, disrupting the header's visual coherence and brand representation. After investigating the root cause of the problem, it was discovered that the issue stemmed from improper image sizing and alignment properties. To rectify this issue, I adjusted the dimensions and positioning of the logo image within the header section, ensuring that it displays correctly and aligns with the rest of the header content. [Header Logo bug before-image](https://raw.githubusercontent.com/DamianGillessen1989/personal-portfolio-dg/main/docs/header-logo-bug-before.webp) - [Header Logo bug after-image](https://raw.githubusercontent.com/DamianGillessen1989/personal-portfolio-dg/main/docs/header-logo-bug-after.webp)
+- After adding the feature that a user can hit 'enter' to submit their score in the Word Scramble game, whenever I did so the score and attempts would increase by 2 - after investigation I realised this was because I had inadvertantly added two handleEnterKeyPress functions to my JS. Removing one of the duplicate handleEnterKeyPress functions solved the issue and now the score is calculating correctly. [Scramble Score bug before-image](https://raw.githubusercontent.com/DamianGillessen1989/que-padrisimov/main/docs/scramble-bug-before.webp) - [Scramble Score bug after-image](https://raw.githubusercontent.com/DamianGillessen1989/que-padrisimo/main/docs/scramble-bug-after.webp)
 
-- During the refinement of CSS styling for the website's layout, an unexpected issue emerged with the footer section. Following a modification in the CSS code to enhance styling elements, the footer mysteriously vanished from the screen altogether. Upon thorough investigation, it was revealed that the footer's sudden disappearance was caused by inadvertently setting its position to 'fixed'. To address this issue, I corrected the position property of the footer element, ensuring that it remains in its intended position at the bottom of the page. [Footer bug before-image](https://raw.githubusercontent.com/DamianGillessen1989/personal-portfolio-dg/main/docs/footer-bug-before.webp) - [Footer bug after-image](https://raw.githubusercontent.com/DamianGillessen1989/personal-portfolio-dg/main/docs/footer-bug-after.webp)
+- A bug arose when testing the Flashcards game - despite the code seeming to function correctly, the 'words' being presented were always the same despite being able to scroll through the cards and the random button functioning as expected. After investigation, the reason for this was found to be an issue with my Java Script. The solution was to add 'onclick="showNextCard()"' to the HTML, and once I did this the issue resolved itself satisfactorily. [Flashcard bug before-image](https://raw.githubusercontent.com/DamianGillessen1989/que-padrisimo/main/docs/flashcard-bug-before.webp) - [Flashcard bug after-image](https://raw.githubusercontent.com/DamianGillessen1989/que-padrisimo/main/docs/flashcard-bug-after.webp)
 
-- Upon inspecting the contact section of the website, a perplexing issue surfaced where the form elements were disorganized and scattered across the page, rendering the form non-functional. Despite thorough scrutiny, the root cause of this erratic behaviour remained elusive. However, a breakthrough occurred when I realized that restructuring the layout using a flexbox approach could potentially resolve the issue. Implementing this strategy, I transformed the contact section into a flex container and made adjustments to the flex-direction property. [Contact Form bug before-image](https://raw.githubusercontent.com/DamianGillessen1989/personal-portfolio-dg/main/docs/contact-form-bug-before.webp) - [Contact Form bug after-image](https://raw.githubusercontent.com/DamianGillessen1989/personal-portfolio-dg/main/docs/contact-form-bug-after.webp)
+- Upon inspecting the footer section of the website, a perplexing issue surfaced where the four social media icons were appearing in the same position on the screen, making them unreadable and unaccessible. After much searching I discovered a rogue 'position:fixed' in one of my css rules that was not supposed to be there. Once removed the social media icons displayed correctly as intended. [Footer bug before-image](https://raw.githubusercontent.com/DamianGillessen1989/que-padrisimo/main/docs/footer-bug-before.webp) - [Footer bug after-image](https://raw.githubusercontent.com/DamianGillessen1989/que-padrisimo/main/docs/footer-bug-after.webp)
 
 ### Unresolved Bugs
 
-- An anomaly surfaced during testing when the gallery exhibited usability issues specifically in landscape mode mobile or small-screen devices. In this configuration, the gallery modal elements appeared off-screen and rendered unusable, presenting a significant impediment to user interaction. [Gallery unresolved bug image](https://raw.githubusercontent.com/DamianGillessen1989/personal-portfolio-dg/main/docs/unresolved-modal-bug.webp)
+- There is one remaining issue with the Word Scramble game, in which, when a user clicks 'guess' and submit's their answer, if they at that point hit 'enter', they are awarded an extra attempt and score if appropriate. This doubling of scores is one issue with the Java Script code that has not been resolved but should be feasible with some effort and attention.
 
-## Deployment
+## Deployment Phase
 
-Once the development phase of the personal portfolio website was completed, the deployment process was initiated to make the site accessible to users on the Internet. The deployment strategy involved leveraging a combination of Visual Studio Code (VSC), Sourcetree, and Git/Github to ensure a seamless transition from development to production.
+Upon completing the development phase of the personal portfolio website, the focus shifted to deploying the site for online accessibility. The deployment strategy was meticulously crafted, harnessing the synergy of Visual Studio Code (VSC), Sourcetree, and Git/Github to seamlessly transition from development to production.
 
 1. Version Control with Git/Github:
 
-- Git was utilized as the primary version control system throughout the development process.
-- All code changes and updates were meticulously tracked using Git, allowing for efficient collaboration and easy rollback to previous versions if needed.
-- GitHub served as the remote repository where the project's codebase was stored securely in the cloud.
-- Regular commits were made to document changes and maintain a comprehensive history of the project.
+- Git served as the backbone of the version control system throughout the development journey.
+- Every code tweak and enhancement was meticulously logged using Git, fostering efficient collaboration and enabling swift rollbacks to prior versions if required.
+- GitHub acted as the secure cloud-based repository housing the project's codebase.
+- Regular commits were executed to maintain a detailed history of the project's evolution and changes.
 
 2. Development Environment with Visual Studio Code (VSC):
 
-- Visual Studio Code (VSC) served as the integrated development environment (IDE) for building and editing the website's code.
-- VSC's intuitive interface and robust feature set facilitated efficient coding, debugging, and testing of the website.
-- Extensions such as Live Server and GitLens enhanced productivity and provided valuable insights into the project's development workflow.
+- Visual Studio Code (VSC) emerged as the go-to integrated development environment (IDE) for crafting and refining the website's code.
+- VSC's user-friendly interface and robust toolset streamlined coding, debugging, and testing processes.
+- Productivity was further amplified by leveraging extensions like Live Server and GitLens, providing invaluable insights into the development workflow.
 
 3. Deployment Process with Sourcetree:
 
-- Sourcetree, a powerful Git GUI client, was employed to streamline the deployment process and manage the Git repository visually.
-- Branching and merging functionalities within Sourcetree allowed for parallel development and seamless integration of new features.
-- The deployment workflow involved pushing the finalized codebase from the local repository to the remote repository on Github using Sourcetree.
+- Sourcetree, a feature-rich Git GUI client, played a pivotal role in simplifying the deployment workflow and visual management of the Git repository.
+- Advanced functionalities such as branching and merging facilitated parallel development and seamless integration of new features.
+- The deployment workflow entailed pushing the finalized codebase from the local repository to the remote repository on Github via Sourcetree.
 
 4. Hosting on GitHub Pages:
 
-- GitHub Pages, a static site hosting service offered by Github, was chosen as the deployment platform for the personal portfolio website.
-- The deployment to Github Pages was initiated directly from the Github repository, leveraging the built-in functionality to publish the site.
-- Continuous integration and deployment (CI/CD) pipelines were configured to automatically deploy updates to the website whenever changes were pushed to the master branch.
+- GitHub Pages, an esteemed static site hosting service offered by Github, was selected as the ideal deployment platform for the personal portfolio website.
+- Deployment to Github Pages was seamlessly initiated from the Github repository, leveraging built-in functionality to publish the site.
+- Continuous integration and deployment (CI/CD) pipelines were configured to automatically deploy updates to the website upon pushing changes to the master branch.
 
 5. Final Testing and Verification:
 
-- Before making the website live, thorough testing was conducted to ensure its functionality, compatibility, and responsiveness across various devices and browsers.
-- Visual inspection, cross-browser testing, and performance optimization were carried out to deliver an optimal user experience.
-- Any issues identified during testing were addressed promptly, and necessary adjustments were made to ensure the website met the highest standards of quality and usability.
+- Rigorous testing was conducted to validate the website's functionality, compatibility, and responsiveness across diverse devices and browsers before going live.
+- Thorough visual inspections, cross-browser assessments, and performance optimizations were carried out to deliver an unparalleled user experience.
+- Any identified issues were promptly addressed, and necessary refinements were implemented to ensure the website met the highest standards of quality and user satisfaction.
 
 In conclusion, the deployment of the personal portfolio website using VSC, Sourcetree, and Git/Github was executed meticulously to guarantee a smooth and successful transition from development to production. The collaborative tools and streamlined processes employed throughout the deployment lifecycle ensured that the website was delivered with precision and professionalism, ready to showcase my skills, projects, and accomplishments to the world.
 
@@ -255,50 +256,50 @@ In conclusion, the deployment of the personal portfolio website using VSC, Sourc
   - From the source section drop-down menu, select the Main Branch
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-The live link can be found here - [https://damiangillessen1989.github.io/personal-portfolio-dg/](https://damiangillessen1989.github.io/personal-portfolio-dg/) 
+The live link can be found here - [https://damiangillessen1989.github.io/que-padrisimo/](https://damiangillessen1989.github.io/que-padrisimo/) 
 
 ## Credits
 
 ### Development Tools and Frameworks
 
-- [**HTML**](https://en.wikipedia.org/wiki/HTML) - Utilized as the foundational structure of the project's content.
-- [**CSS**](https://en.wikipedia.org/wiki/CSS) - Employed to style all web content uniformly throughout the project.
+- [**HTML**](https://en.wikipedia.org/wiki/HTML) - Served as the foundation for the project's content.
+- [**CSS**](https://en.wikipedia.org/wiki/CSS) - Throughout the project, all web content was styled uniformly.
+- [**Java Script**](https://en.wikipedia.org/wiki/JavaScript) - Provided site functionality and game functionality on the site.
 
 ### Styling and Design Elements
 
-- [**Google Fonts**](https://fonts.google.com/) - Provides fonts for the project, specifically Roboto and Dancing Script, linked in the header.
-- [**Font Awesome**](https://fontawesome.com/) - Supplies social media icons used in the footer.
-- [**Amiresponsive**](https://ui.dev/amiresponsive) - Used for creating Responsive Mockup.
-- [**Icons8**](https://icons8.com/) - The Favicon used for this site was retrieved from iconos8.es:
-<a target="_blank" href="https://icons8.com/icon/kvqTlMRogUYm/cuenta-de-prueba">Cuenta de Prueba</a> icono de <a target="_blank" href="https://icons8.com">Icons8</a>
-- [**Wepik**](https://wepik.com/) - Utilized to generate AI images for site backgrounds, features, and the Gallery section.
+- [**Google Fonts**](https://fonts.google.com/) - Provided fonts for the project, specifically Raleway and Sans-Serif, linked in the header.
+- [**Font Awesome**](https://fontawesome.com/) - Supplied social media icons used in the footer and flashcards.
+- [**Amiresponsive**](https://ui.dev/amiresponsive) - Used for creating the Responsive Mockup.
+- [**Icons8**](https://icons8.com/) - The Favicon used for this site was retrieved from icons8.com
+- [**Wepik**](https://wepik.com/) - Utilised to generate an AI image for the site logo.
 
 ### Development and Testing Utilities
 
 - [**Github**](https://github.com/) - Repository for storing project code after commits and pushes.
 - [**Git**](https://git-scm.com/) - Manages version control, with Gitpod terminal facilitating commits and pushes.
 - [**Visual Studio Code**](https://code.visualstudio.com/) - Served as the primary development environment.
-- [**Balsamiq**](https://balsamiq.cloud/) - Used for creating wireframes to plan project layout and design.
-- [Responsive Viewer](https://responsiveviewer.org/) - Used for testing across devices and browsers.
-- [Wave Web Accessibility Evaluation Tool](https://wave.webaim.org/) - Used to test accessibility of the site.
+- [**Figma**](https://www.figma.com/) - Used to generate project layouts and design wireframes.
+- [**Responsive Viewer**](https://responsiveviewer.org/) - Used for testing across devices and browsers.
+- [**Wave Web Accessibility Evaluation Tool**](https://wave.webaim.org/) - Used to test accessibility of the site.
 
 ### Optimization and Quality Assurance
 
 - [**Grammarly**](https://app.grammarly.com/) - Employed to rectify grammar errors across the project, ensuring polished content.
 - [**w3 Validator**](https://validator.w3.org/#validate_by_input) - Used to verify the HTML of the site pages and CSS styling code.
 - [**Chrome DevTools & Lighthouse**](https://developer.chrome.com/docs/lighthouse/overview) - Used to check the performance rating of the site.
-- [Google PageSpeed](https://pagespeed.web.dev/) - Used to analyse and improve the performance of the site.
+- [**Google PageSpeed**](https://pagespeed.web.dev/) - Used to analyse and improve the performance of the site.
 
 ### Acknowledgements
 
-I would like to express my gratitude to the following individuals and resources for their invaluable contributions and support throughout the development of this project:
+I'd like to thank the following persons and sources for their invaluable assistance and support while this project was being developed:
 
 - My Mentor Harry Dhillon at the Code Institute - For his advice, tips and assistance in creating this awesome project, and the guidance and inspiration for this extensive README file.
--Peers and Instructors at the Code Institute - For providing valuable feedback and guidance during the development and testing phases. Especially Thomas for his constant feedback and support.
+- My Peers and Instructors at the Code Institute - For providing valuable feedback and guidance during the development and testing phases. Especially Thomas for his constant feedback and support.
 - The Love Running project - This project was a great guide on how to prepare the basic site structures and how to present information in a nice styled way - [https://github.com/Code-Institute-Solutions/love-running-v3](https://github.com/Code-Institute-Solutions/love-running-v3).
 - The Sikhism Project by Harry Dhillon - [https://github.com/Harry-Leepz/Sikhism-Project](https://github.com/Harry-Leepz/Sikhism-Project).
 - Stack Overflow - A treasure trove of knowledge and solutions to various coding challenges encountered during development.
 - My cousin Hanno - For his continuous support educational tips and endless patience.
 - My daughter Thea - Just for being my daughter.
 
-Thank you to everyone who has contributed directly or indirectly to the success of this project. Your support and encouragement have been instrumental in bringing this vision to life.
+I am grateful to everyone who contributed to the project's success, whether directly or indirectly. Your encouragement and support have been critical in achieving my goal with this site.

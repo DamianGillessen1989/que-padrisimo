@@ -3,8 +3,8 @@
 const task = document.querySelector('#task')
 const msg = document.querySelector('#msg')
 const input = document.querySelector('#input')
-const Nxtbtn = document.querySelector('#nxtBtn')
-const Checkbtn = document.querySelector('#checkBtn')
+const nxtBtn = document.querySelector('#nxtBtn')
+const checkBtn = document.querySelector('#checkBtn')
 const score = document.querySelector('#score')
 const attempted = document.querySelector('#attempted')
 const corrects = document.querySelector('#corrects')
@@ -129,12 +129,12 @@ const scramble = (word) => {
     return sWordArr.join('')
 }
 
-Nxtbtn.addEventListener('click', () => {
+nxtBtn.addEventListener('click', () => {
     msg.classList.add('hidden');
-    Nxtbtn.classList.add('hidden');
-    Nxtbtn.innerHTML = 'Next word';
+    nxtBtn.classList.add('hidden');
+    nxtBtn.innerHTML = 'Next word';
     quitBtn.classList.remove('hiddenTwo');
-    Checkbtn.classList.remove('hidden');
+    checkBtn.classList.remove('hidden');
     task.classList.remove('hidden');
     input.value = '';
     input.classList.remove('hidden');
@@ -154,16 +154,16 @@ Nxtbtn.addEventListener('click', () => {
     const con = document.querySelector('.con');
     con.style.height = '25.5rem';
 
-    Nxtbtn.style.borderRadius = '5px';
-    Nxtbtn.style.cursor = 'pointer';
-    Nxtbtn.style.padding = '0.5rem 0.6rem';
-    Nxtbtn.style.border = '1px solid #f0f0f0';
-    Nxtbtn.style.opacity = '0.8';
-    Nxtbtn.style.backgroundColor = '#f0f0f0';
-    Nxtbtn.style.color = '#1e3050';
-    Nxtbtn.style.position = 'relative';
-    Nxtbtn.style.left = '3rem';
-    Nxtbtn.style.bottom = '-5rem';
+    nxtBtn.style.borderRadius = '5px';
+    nxtBtn.style.cursor = 'pointer';
+    nxtBtn.style.padding = '0.5rem 0.6rem';
+    nxtBtn.style.border = '1px solid #f0f0f0';
+    nxtBtn.style.opacity = '0.8';
+    nxtBtn.style.backgroundColor = '#f0f0f0';
+    nxtBtn.style.color = '#1e3050';
+    nxtBtn.style.position = 'relative';
+    nxtBtn.style.left = '3rem';
+    nxtBtn.style.bottom = '-5rem';
 
     const scrambleHeader = document.querySelector('.scramble-header');
     scrambleHeader.style.display = 'none';
@@ -171,16 +171,16 @@ Nxtbtn.addEventListener('click', () => {
     const scoreElement = document.querySelector('#score');
     scoreElement.style.display = 'flex';
 
-    if (Nxtbtn.classList.contains('bordered')) {
-        Nxtbtn.classList.remove('bordered');
+    if (nxtBtn.classList.contains('bordered')) {
+        nxtBtn.classList.remove('bordered');
     } else {
-        Nxtbtn.classList.add('bordered');
+        nxtBtn.classList.add('bordered');
     }
 });
 
 let enterPressed = false;
 
-Checkbtn.addEventListener('click', () => {
+checkBtn.addEventListener('click', () => {
     if (enterPressed) {
         return;
     }
@@ -213,13 +213,13 @@ const checkAnswer = () => {
         msg.innerHTML = `Wrong answer 😑<br>correct answer is <span>${nWord}</span>`;
         msg.style.color = 'red';
     }
-    Checkbtn.classList.add('hidden');
-    Nxtbtn.classList.remove('hidden');
+    checkBtn.classList.add('hidden');
+    nxtBtn.classList.remove('hidden');
     attempted.innerHTML = att;
     corrects.innerHTML = scr;
 };
 
-Nxtbtn.addEventListener('click', () => {
+nxtBtn.addEventListener('click', () => {
     enterPressed = false;
 });
 
