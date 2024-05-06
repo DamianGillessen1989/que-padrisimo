@@ -190,6 +190,8 @@ The site structure is ultimately designed to be visually appealing, logically or
 
 - [Grammarly](https://app.grammarly.com/) - Used to ensure polished material by addressing grammar errors throughout the production.
 - [w3 Validator](https://validator.w3.org/) - Used to validate the CSS styling code and HTML of internet pages.
+- [JSHint](https://jshint.com/) - Used to validatea the JavaScript code of all pages.
+- [Esprima](https://esprima.org/demo/validate.html) - Used to validatea the JavaScript code of all pages.
 - [Google Chrome DevTools & Lighthosue](https://developer.chrome.com/docs/lighthouse/overview) - Used to assess the website's functionality.
 - [Google PageSpeed](https://pagespeed.web.dev/) - Used to analyse and improve the website's functionality.
 
@@ -294,6 +296,8 @@ The live link can be found here - [https://damiangillessen1989.github.io/que-pad
 
 - [**Grammarly**](https://app.grammarly.com/) - Employed to rectify grammar errors across the project, ensuring polished content.
 - [**w3 Validator**](https://validator.w3.org/#validate_by_input) - Used to verify the HTML of the site pages and CSS styling code.
+- [**JSHint**](https://jshint.com/) - Used to validatea the JavaScript code of all pages.
+- [**Esprima**](https://esprima.org/demo/validate.html) - Used to validatea the JavaScript code of all pages.
 - [**Chrome DevTools & Lighthouse**](https://developer.chrome.com/docs/lighthouse/overview) - Used to check the performance rating of the site.
 - [**Google PageSpeed**](https://pagespeed.web.dev/) - Used to analyse and improve the performance of the site.
 

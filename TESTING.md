@@ -60,16 +60,20 @@ I conducted extensive testing using a range of internet validators and tools to 
 - W3C CSS Test Results
 ![W3C CSS test results](https://raw.githubusercontent.com/DamianGillessen1989/que-padrisimo/main/docs/css-test-results.webp)
 
-3. Performance Analysis: Performance data were analysed using tools such as Google PageSpeed Insights and Lighthouse to determine rendering speed, page load times, and overall performance improvement.
+3. JavaScript Validation: The JavaScript code for each page on the site was inspected using JSHint and Esprima respectively. I used any warnings or errors presented from these sites to be able to ensure the site was functioning as intended and all code-conventions were followed appropiately.
+![JSHint JavaScript test results](https://raw.githubusercontent.com/DamianGillessen1989/que-padrisimo/main/docs/js-test-results.webp)
+![Esprima JavaScript test results](https://raw.githubusercontent.com/DamianGillessen1989/que-padrisimo/main/docs/js-test-results-two.webp)
+
+4. Performance Analysis: Performance data were analysed using tools such as Google PageSpeed Insights and Lighthouse to determine rendering speed, page load times, and overall performance improvement.
 - Google PageSpeed Test Results
 ![Google PageSpeed test results](https://raw.githubusercontent.com/DamianGillessen1989/que-padrisimo/main/docs/page-speed-test-results.webp)
 ![Google PageSpeed test results part II](https://raw.githubusercontent.com/DamianGillessen1989/que-padrisimo/main/docs/page-speed-test-results-two.webp)
 
-4. Mobile-Friendly Testing: The website's mobile friendliness was evaluated using Google Chrome's Developer Tools and Responsive Viewer, as well as testing across a range of screen sizes, device types, and orientations (including landscape and portrait). In this method, browser compatibility was also assessed. To ensure consistent rendering and functionality across several platforms, the website was tested on a wide range of browsers and browser versions (including Chrome, Firefox, Safari, and Edge).
+5. Mobile-Friendly Testing: The website's mobile friendliness was evaluated using Google Chrome's Developer Tools and Responsive Viewer, as well as testing across a range of screen sizes, device types, and orientations (including landscape and portrait). In this method, browser compatibility was also assessed. To ensure consistent rendering and functionality across several platforms, the website was tested on a wide range of browsers and browser versions (including Chrome, Firefox, Safari, and Edge).
 - Responsive Viewer Test Results
 ![Responsive Viewer test results](https://raw.githubusercontent.com/DamianGillessen1989/que-padrisimo/main/docs/responsive-viewer-home.webp)
 
-5. Performace Testing: The site was evaluated for performance using Google Chrome's DevTools and Google Lighthouse. See the results here:
+6. Performace Testing: The site was evaluated for performance using Google Chrome's DevTools and Google Lighthouse. See the results here:
 - Google Lighthouse Test Results.
 ![Google Lighthouse test results](https://raw.githubusercontent.com/DamianGillessen1989/que-padrisimo/main/docs/lighthouse-scores.webp)
 
