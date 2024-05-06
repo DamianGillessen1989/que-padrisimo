@@ -148,8 +148,9 @@ The site structure is ultimately designed to be visually appealing, logically or
 ![Quiz Game](https://raw.githubusercontent.com/DamianGillessen1989/que-padrisimo/main/docs/que-padrisimo-quiz.webp)
 - The second game of the site, the Word Scramble. Users are presented with a 'start game button', then a scrambled Spanish word and a clue in English, and a 'quit game' and 'guess' button respecitvely. They may type their answer and make their guess, and their attempts and scores are recorded and presented.
 ![Word Scramble Game](https://raw.githubusercontent.com/DamianGillessen1989/que-padrisimo/main/docs/que-padrisimo-scramble.webp)
-- The last game of the site, the Flashcards, vocab practice. Users are presented with a flashcard and it's English word on the front. Once ready they may click the flashcard to reveal the Spanish word and it's phonetical pronunciation.
+- The last game of the site, the Flashcards, vocab practice. Users are presented with a flashcard and it's English word on the front. There are arrows for navigating between flashcards and a random button which will reveal a random flashcard. Once ready they may click the flashcard to reveal the Spanish word and it's phonetical pronunciation.
 ![Flashcards Practice](https://raw.githubusercontent.com/DamianGillessen1989/que-padrisimo/main/docs/que-padrisimo-flashcard.webp)
+![Flashcards Practice](https://raw.githubusercontent.com/DamianGillessen1989/que-padrisimo/main/docs/que-padrisimo-flashcard-two.webp)
 
 ### Features to Implement:
 
@@ -193,7 +194,7 @@ The site structure is ultimately designed to be visually appealing, logically or
 
 ## Testing Phase
 
-A thorough testing approach was carried out to ensure the new site's optimal operation and efficiency. The [TESTING.md](https://damiangillessen1989.github.io/que-padrisimo/TESTING.md) file contains a list of steps taken to ensure the site's best performance.
+A thorough testing approach was carried out to ensure the new site's optimal operation and efficiency. The [TESTING.md](https://github.com/DamianGillessen1989/que-padrisimo/blob/main/TESTING.md) file contains a list of steps taken to ensure the site's best performance.
 
 ## Resolved and Unsolved Bugs
 
@@ -283,6 +284,10 @@ The live link can be found here - [https://damiangillessen1989.github.io/que-pad
 - [**Figma**](https://www.figma.com/) - Used to generate project layouts and design wireframes.
 - [**Responsive Viewer**](https://responsiveviewer.org/) - Used for testing across devices and browsers.
 - [**Wave Web Accessibility Evaluation Tool**](https://wave.webaim.org/) - Used to test accessibility of the site.
+- [**Anandvikas**](https://codepen.io/anandvikas/pen/RwxKagb) - Inspiration for the Word Scramble game.
+- [**NicoHDL**](https://codepen.io/nicoHDL/pen/dyaVNBd) - Inspiration for the Spanish Quiz game.
+- [**Quizlet**](https://quizlet.com/396139213/html-and-css-code-flash-cards/) - Inspiration for the Flashcards game.
+- [**DevSolitude**](https://www.devsolitude.com/blog/how-to-create-html-css-cards-flashcards) - Also inspiration for the Flashcards game.
 
 ### Optimization and Quality Assurance
 
