@@ -1,5 +1,13 @@
 /* --------- Global style */
 
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background: linear-gradient(to bottom, #F5F5F5, #FFFFFF);
     font-family: "Raleway", sans-serif;
@@ -160,14 +168,6 @@ nav {
 }
 
 /* --------- Quiz Game */
-
-*,
-*:after,
-*:before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 .app {
     background: #F5F5F5;
