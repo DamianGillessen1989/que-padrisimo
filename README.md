@@ -32,7 +32,7 @@ Each phase was thoroughly planned and executed step-by-step, in order to address
 
 ### Discovery Phase
 
-My Goals:
+#### My Goals:
 
 - I aimed to streamline the user journey, ensuring smooth navigation across the platform.
 - I endeavoured to enhance textual clarity to prevent any potential user confusion.
@@ -40,39 +40,39 @@ My Goals:
 - I worked towards maintaining coherence and relevance across all elements of the content.
 - Lastly, I focused on structuring the content in a way that avoids overwhelming users.
 
-User Objectives:
+### User Objectives:
 
-    Goals for First-time Visitors:
+  #### Goals for First-time Visitors:
 
-    - Swiftly grasp the purpose and scope of the platform.
-    - Effortlessly navigate between games and pages.
-    - Experience a sense of progression while exploring.
-    - Minimise visual fatigue caused by excessive content.
-    - Resume browsing seamlessly after any interruptions.
+  - Swiftly grasp the purpose and scope of the platform.
+  - Effortlessly navigate between games and pages.
+  - Experience a sense of progression while exploring.
+  - Minimise visual fatigue caused by excessive content.
+  - Resume browsing seamlessly after any interruptions.
 
-    Goals for Returning Visitors:
+  #### Goals for Returning Visitors:
 
-    - Easily locate social media links.
-    - Understand the presented information.
-    - Engage with the language learning content without difficulty.
+  - Easily locate social media links.
+  - Understand the presented information.
+  - Engage with the language learning content without difficulty.
     
 ### Planning Phase
 
 To ensure a systematic approach to project management, I structured the development process into three distinct phases:
 
-Phase 1: Conceptualisation
+#### Phase 1: Conceptualisation
 
 - Come up with ideas for 3 different language learning games that would be simple to program and easy to understand by users to facilitate language learning.
 - Develop a brand theme, logo and colour scheme that would be attractive, facilitate learning, and encourage users to return.
 - Design the site mobile-first and make sure it's properly responsive, be appropriately styled for and facilitates learning on, all devices.
 
-Phase 2: Refinement
+#### Phase 2: Refinement
 
 - Test the games and make any appropriate adjustments necessary for the games to function as intended.
 - Solicit feedback from peers to gauge usability and functionality.
 - Address any identified bugs or issues to enhance user experience.
 
-Phase 3: Validation and Finalisation
+#### Phase 3: Validation and Finalisation
 
 - Conduct thorough testing using tools like W3C to ensure compliance with web standards.
 - Prepare the project for submission, ensuring all requirements are appropriately met.
@@ -81,7 +81,7 @@ Phase 3: Validation and Finalisation
 
 During the development phase of this project, careful attention was given to crafting an immersive and visually appealing user experience:
 
-Colour Scheme:
+#### Colour Scheme:
 
 - Orange & Yellow
 - White
@@ -90,7 +90,7 @@ Colour Scheme:
 
 With a focus on user comfort, the design was carefully crafted to accommodate learning, with a simple plain background and a centered game area that focuses the user's attention to that space. Opting for a light background reduces distraction, while the purple is an attractive and positive colour that will encourage and direct the users focus. The colour palette was thoughtfully curated to deliver a cohesive and visually stimulating encounter, that will hopefully assist in facilitating user learning experiences.
 
-Typography:
+#### Typography:
 
 - Raleway
 - Sans-Serif
@@ -109,26 +109,26 @@ These wireframes served as a first-draft blueprint for page layouts and responsi
 
 Que Padrísimo's website structure was designed to provide a user-friendly navigation experience. The structure is organized into three distinct sections, each serving a specific purpose and presenting relevant information effectively. Below is an overview of the site structure:
 
-1. Header:
+#### 1. Header:
 - There will be a consistent header at the top of all site pages. The design will be consistent across all pages, and contain the logo which will also link back to the home page, and three additional links.
 - These links will navigate the user to each page of the site, the home page, scramble game, and vocab flashcard practice.
 
-2. Home Page/Quiz Game:
+#### 2. Home Page/Quiz Game:
 
 - The landing page offers a brief introduction to the website and also to the first game of the site, the Quiz.
 - It serves as the entry point to the platform, providing visitors with a user-friendly, interactive game in which they can test their intermediate-level Spanish.
 
-3. Scramble Game:
+#### 3. Scramble Game:
 
 - This page matches the homepage in theme, style and layout, in hopes that this will facilitate learning and user focus. It also presents the users with the second interactive and engaging learning game, the word scramble game.
 - It includes an introductory paragraph explaining to users what to do and how to play the game.
 
-4. Flashcards Vocab Practice:
+#### 4. Flashcards Vocab Practice:
 
 - The last page also matches the homepage in theme, style and layout. Users are presented with 50 flashcards in which they can read a word in English and click the flashcard in order to reveal the Spanish word and pronunciation.
 - It also includes instructional paragraphs both introducing the game and informing the users to click the flashcard to reveal the answer.
 
-5. Footer:
+#### 5. Footer:
 
 - Every page in the portfolio includes a consistently styled footer, that matches the header in colour, with social network icons and other relevant information presented.
 - It serves as a reliable starting point for visitors to explore the website and contact me on other platforms should the need arise.
@@ -223,32 +223,32 @@ Several issues were identified and rectified during the Que Padrísimo website c
 
 Upon completing the development phase of the personal portfolio website, the focus shifted to deploying the site for online accessibility. The deployment strategy was meticulously crafted, harnessing the synergy of Visual Studio Code (VSC), Sourcetree, and Git/GitHub to seamlessly transition from development to production.
 
-1. Version Control with Git/GitHub:
+#### 1. Version Control with Git/GitHub:
 
 - Git served as the backbone of the version control system throughout the development journey.
 - Every code tweak and enhancement was meticulously logged using Git, fostering efficient collaboration and enabling swift rollbacks to prior versions if required.
 - GitHub acted as the secure cloud-based repository housing the project's codebase.
 - Regular commits were executed to maintain a detailed history of the project's evolution and changes.
 
-2. Development Environment with Visual Studio Code (VSC):
+#### 2. Development Environment with Visual Studio Code (VSC):
 
 - Visual Studio Code (VSC) emerged as the go-to integrated development environment (IDE) for crafting and refining the website's code.
 - VSC's user-friendly interface and robust toolset streamlined coding, debugging, and testing processes.
 - Productivity was further amplified by leveraging extensions like Live Server and GitLens, providing invaluable insights into the development workflow.
 
-3. Deployment Process with Sourcetree:
+#### 3. Deployment Process with Sourcetree:
 
 - Sourcetree, a feature-rich Git GUI client, played a pivotal role in simplifying the deployment workflow and visual management of the Git repository.
 - Advanced functionalities such as branching and merging facilitated parallel development and seamless integration of new features.
 - The deployment workflow entailed pushing the finalized codebase from the local repository to the remote repository on GitHub via Sourcetree.
 
-4. Hosting on GitHub Pages:
+#### 4. Hosting on GitHub Pages:
 
 - GitHub Pages, an esteemed static site hosting service offered by GitHub, was selected as the ideal deployment platform for the personal portfolio website.
 - Deployment to GitHub Pages was seamlessly initiated from the GitHub repository, leveraging built-in functionality to publish the site.
 - Continuous integration and deployment (CI/CD) pipelines were configured to automatically deploy updates to the website upon pushing changes to the master branch.
 
-5. Final Testing and Verification:
+#### 5. Final Testing and Verification:
 
 - Rigorous testing was conducted to validate the website's functionality, compatibility, and responsiveness across diverse devices and browsers before going live.
 - Thorough visual inspections, cross-browser assessments, and performance optimizations were carried out to deliver an unparalleled user experience.
