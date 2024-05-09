@@ -60,7 +60,7 @@ const card = document.querySelector('.card');
 
 function flipCard() {
     card.classList.toggle('flipped');
-}
+};
 
 function showNextCard() {
     if (currentCard < totalCards) {
@@ -68,7 +68,7 @@ function showNextCard() {
         updateFlashcard();
         card.classList.remove('flipped');
     }
-}
+};
 
 function showPreviousCard() {
     if (currentCard > 1) {
@@ -76,7 +76,7 @@ function showPreviousCard() {
         updateFlashcard();
         card.classList.remove('flipped');
     }
-}
+};
 
 function updateFlashcard() {
     let cardNumberElement = document.getElementById('cardNumber');
@@ -84,13 +84,13 @@ function updateFlashcard() {
     cardNumberElement.innerText = `${currentCard}/${totalCards}`;
     document.getElementById('questionText').innerText = flashcards[currentCard - 1].question;
     document.getElementById('answerText').innerText = flashcards[currentCard - 1].answer;
-}
+};
 
 function showRandomCard() {
     let randomCard = Math.floor(Math.random() * totalCards) + 1;
     currentCard = randomCard;
     updateFlashcard();
     card.classList.remove('flipped');
-}
+};
 
 updateFlashcard();

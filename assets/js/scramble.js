@@ -108,11 +108,11 @@ const wordBank = [
         word: "papel",
         hint: "Material you write on"
     }
-]
+];
 
 let nWord;
-let att = 0
-let scr = 0
+let att = 0;
+let scr = 0;
 
 const createWords = () => {
     if (wordBank.length === 0) {
@@ -122,12 +122,12 @@ const createWords = () => {
     let selectedWord = wordBank[randomIndex];
     wordBank.splice(randomIndex, 1);
     return selectedWord;
-}
+};
 
 const scramble = (word) => {
     let sWordArr = word.split('').sort()
     return sWordArr.join('')
-}
+};
 
 nxtBtn.addEventListener('click', () => {
     msg.classList.add('hidden');

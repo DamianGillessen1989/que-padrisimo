@@ -193,23 +193,21 @@ const quizContainerEl = document.querySelector(".quiz");
 let currentQuestionIndex = 0;
 let score = 0;
 
-startBtnEl.addEventListener("click", () => {
-    startQuiz();
-    quizContainerEl.classList.remove("hidden");
-    startBtnEl.style.display = "none";
-    document.querySelector('.app').style.height = '97%';
-});
+function handleStartButtonClick() {
+    startBtnEl.addEventListener("click", () => {
+        startQuiz();
+        quizContainerEl.classList.remove("hidden");
+        startBtnEl.style.display = "none";
+        document.querySelector('.app').style.height = '97%';
+    });
+};
 
 function startQuiz() {
     currentQuestionIndex = 0;
     score = 0;
     nextBtnEl.innerHTML = "Next";
     showQuestion();
-}
-quitBtnEl.addEventListener("click", () => {
-    quizContainerEl.classList.add("hidden");
-    startBtnEl.style.display = "block";
-});
+};
 
 function showQuestion() {
     resetState();
@@ -228,14 +226,14 @@ function showQuestion() {
         }
         button.addEventListener("click", selectAnswer);
     });
-}
+};
 
 function resetState() {
     nextBtnEl.style.visibility = "hidden";
     while (answerButtonsEl.firstChild) {
         answerButtonsEl.removeChild(answerButtonsEl.firstChild);
     }
-}
+};
 
 function selectAnswer(e) {
     let selectedBtn = e.target;
@@ -253,14 +251,14 @@ function selectAnswer(e) {
         button.disabled = true;
     });
     nextBtnEl.style.visibility = "visible";
-}
+};
 
 function showScore() {
     resetState();
     questionEl.innerHTML = `You scored ${score} out of ${questions.length}!`;
     nextBtnEl.innerHTML = "Play Again";
     nextBtnEl.style.visibility = "visible";
-}
+};
 
 function handleNextButton() {
     currentQuestionIndex++;
@@ -269,15 +267,17 @@ function handleNextButton() {
     } else {
         showScore();
     }
-}
+};
 
-nextBtnEl.addEventListener("click", () => {
-    if (currentQuestionIndex < questions.length) {
-        handleNextButton();
-    } else {
-        startQuiz();
-    }
-});
+function handleNextButtonClick() {
+    nextBtnEl.addEventListener("click", () => {
+        if (currentQuestionIndex < questions.length) {
+            handleNextButton();
+        } else {
+            startQuiz();
+        }
+    });
+};
 
 quitBtnEl.addEventListener("click", () => {
     quizContainerEl.classList.add("hidden");
@@ -286,3 +286,5 @@ quitBtnEl.addEventListener("click", () => {
 });
 
 startQuiz();
+handleStartButtonClick();
+handleNextButtonClick();
