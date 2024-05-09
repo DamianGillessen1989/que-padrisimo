@@ -516,6 +516,32 @@ button {
     cursor: pointer;
 }
 
+/* --------- 404 page */
+button.enf-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #001f3f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 1rem 2.5rem;
+    border: 1px solid #f0f0f0;
+    opacity: 0.8;
+}
+
+button.enf-btn:hover {
+    background-color: #001f3f;
+}
+
+button.enf-btn:focus {
+    outline: none;
+}
+
+#enf-link {
+    color: white;
+}
+
 /* --------- Media queries */
 
 @media (max-width: 414px) {

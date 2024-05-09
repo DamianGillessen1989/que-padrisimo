@@ -197,7 +197,7 @@ startBtnEl.addEventListener("click", () => {
     startQuiz();
     quizContainerEl.classList.remove("hidden");
     startBtnEl.style.display = "none";
-    document.querySelector('.app').style.height = '97%'; // Adjusting the height of .app class
+    document.querySelector('.app').style.height = '97%';
 });
 
 function startQuiz() {

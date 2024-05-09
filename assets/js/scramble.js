@@ -1,14 +1,14 @@
 // JS for scramble.html Word Scramble game
 
-const task = document.querySelector('#task')
-const msg = document.querySelector('#msg')
-const input = document.querySelector('#input')
-const nxtBtn = document.querySelector('#nxtBtn')
-const checkBtn = document.querySelector('#checkBtn')
-const score = document.querySelector('#score')
-const attempted = document.querySelector('#attempted')
-const corrects = document.querySelector('#corrects')
-const hint = document.querySelector('#hint'); // Added this line to get the hint element
+const task = document.querySelector('#task');
+const msg = document.querySelector('#msg');
+const input = document.querySelector('#input');
+const nxtBtn = document.querySelector('#nxtBtn');
+const checkBtn = document.querySelector('#checkBtn');
+const score = document.querySelector('#score');
+const attempted = document.querySelector('#attempted');
+const corrects = document.querySelector('#corrects');
+const hint = document.querySelector('#hint');
 const quitBtn = document.querySelector('#quitBtnTwo');
 
 const wordBank = [

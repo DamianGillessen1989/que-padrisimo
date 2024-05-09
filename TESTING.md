@@ -20,7 +20,7 @@ The webpage was thoroughly tested using Google Chrome's 'Responsive-Viewer' appl
 - Flashcard page
 ![Gallery Page](https://raw.githubusercontent.com/DamianGillessen1989/que-padrisimo/main/docs/responsive-viewer-flashcards.webp)
 
-3. **Manual Testing:** We thoroughly evaluated the links and navigation menu to ensure they guided visitors to the correct website pages and locations. Furthermore, the menu's navigability was assessed on desktop and mobile devices.
+3. **Manual Testing:** We thoroughly evaluated the links and navigation menu to ensure they guided visitors to the correct website pages and locations. Furthermore, the menu's ease of navigation was assessed on desktop and mobile devices.
 
 - Games Manual Testing
 ![Quiz Game Manual Testing](https://raw.githubusercontent.com/DamianGillessen1989/que-padrisimo/main/docs/quiz-manual-testing.webp)

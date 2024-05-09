@@ -160,6 +160,8 @@ The site structure is ultimately designed to be visually appealing, logically or
 - A toggleable light/dark mode facility, allowing user browsing based on preferences.
 - To create a distinct URL and domain to enhance branding efforts.
 - A wider variety of games and learning tools. Expanded databases of questions and answers for the existing games as well as more features like countdown timers and the ability to create a profile and record scores and track progress.
+- I would like to add rounds to the Word Scramble game so player would not repeat the words and be able to track their scores and progress better.
+- The 404 page is not 'live' as this requires the site to be 'hosted' on a server - if the site was to be hosted on a server this page could be deployed for whenever a user tries to open a page that doesn't exist or use a broken link etc.
 
 ## Technologies Used:
 
@@ -218,6 +220,8 @@ Several issues were identified and rectified during the Que Padrísimo website c
 ### Unresolved Bugs
 
 - There is one remaining issue with the Word Scramble game, in which, when a user clicks 'guess' and submits their answer, if they at that point hit 'enter', they are awarded an extra attempt and score if appropriate. This doubling of scores is one issue with the Java Script code that has not been resolved but should be feasible with some effort and attention.
+- Some users reported an alignment issue with the 'Quit Quiz' and 'Play Again' buttons on the Quiz game. Despite testing on multiple devices and screen-resolutions I was not able to recreate the issue - the alignment seems fine on my devices. [Quiz Button bug - not able to reproduce](https://raw.githubusercontent.com/DamianGillessen1989/que-padrisimo/main/docs/quiz-buttons-bug.webp)
+- On the word scramble game - when a player completes all the words in the list, they are then 'stuck' and are presented the last word from the array repeatedly until the page is refreshed. This is one thing that could be fixed with further development.
 
 ## Deployment Phase
 
@@ -309,6 +313,7 @@ I'd like to thank the following persons and sources for their invaluable assista
 - My Peers and Instructors at the Code Institute - For providing valuable feedback and guidance during the development and testing phases. Especially Thomas for his constant feedback and support.
 - The Love Running project - This project was a great guide on how to prepare the basic site structures and how to present information in a nice styled way - [https://github.com/Code-Institute-Solutions/love-running-v3](https://github.com/Code-Institute-Solutions/love-running-v3).
 - The Sikhism Project by Harry Dhillon - [https://github.com/Harry-Leepz/Sikhism-Project](https://github.com/Harry-Leepz/Sikhism-Project).
+- My personal portfolio project - [https://github.com/DamianGillessen1989/personal-portfolio-dg](https://github.com/DamianGillessen1989/personal-portfolio-dg).
 - Stack Overflow - A treasure trove of knowledge and solutions to various coding challenges encountered during development.
 - My cousin Hanno - For his continuous support educational tips and endless patience.
 - My daughter Thea - Just for being my daughter.
